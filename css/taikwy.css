@@ -1,0 +1,29 @@
+
+   
+    body {
+        max-width: 1000px;
+        min-width: 500px;
+        margin: 0 auto;
+        font-family: 'Mansalva', cursive;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3.0em;
+        font-family: 'Mansalva', cursive;
+    }
+
+    p {
+        font-family: 'Mansalva', cursive;
+        font-size: 1.4em;
+        font-style: normal;
+        margin-bottom: 1em;
+        line-height: 1.4em;
+    }
+
+    img {
+        max-width: 500px;
+       margin: 0 auto;
+      }
+
+
+
