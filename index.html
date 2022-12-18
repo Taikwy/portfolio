@@ -2,27 +2,134 @@
   <head>
     <meta charset="utf-8">
     <title>Taikwy</title>
-    <link rel="stylesheet" href="CSS/taikwy.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/landing.css">
+    <link rel="stylesheet" href="CSS/experience.css">
+    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="CSS/about.css">
   </head>
 
   <body>
 
-    <div class="navbar">
-      <div class ="navbarItems">
-        <a href="./index.html" id = "home" class="active">HOME</a>
-        <a href="./projects.html" id = "projects">PROJECTS</a>
-        <a href="./experience.html" id = "experience">EXPERIENCE</a>
-        <a href="./about.html" id = "about">ABOUT ME</a>
-        <a href="./contact.html" id = "contact">CONTACT</a>
+    <div class="navbar container">
+      <ul>
+        <li><a href="./index.html" id = "home" class="active">HOME</a></li>
+        <li><a href="./projects.html" id = "projects">PROJECTS</a></li>
+        <li><a href="./experience.html" id = "experience">EXPERIENCE</a></li>
+        <li><a href="./about.html" id = "about">ABOUT ME</a></li>
+        <li><a href="./contact.html" id = "contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="container landing flex">
+      <div class="image"></div>
+      <div class="text">
+        <h1>TYLER WANG</h1>
+        <span>
+        Game Programmer and Artist
+        <span>
+      </div>
+      <div class="links">
+        <a href="">Github</a>
+        <a href="">Linkedin</a>
+        <a href="">Resume</a>
+      </div>
+    </div>
+    
+    <!-- <div class="container experience">
+      <div class="experience text">
+        <h2>Experience</h2>
+        <span>
+          Darkwind Media co-op.
+        <span>
+      </div>
+    </div> -->
+    
+    <div class="container projects">
+      <div class="about flex">
+        <div class="text">
+          <div class="header">Projects</div>
+          <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident excepturi cum culpa sed nesciunt voluptatibus ea reprehenderit iste officiis vitae quis, corporis maxime possimus, dolorem non ad eos consectetur praesentium. 
+          </div>
+        </div>
+        <img src="images/SSHornet.png" alt="wip">
+      </div>
+
+      <div class="items flexcolumn">
+        <div class="widecolumn">
+
+          <div class="card">
+            <div class="title">
+              <h2>TANKS!</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Rogue-like tanks game</span>
+              </div>
+              <div class="platform">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <a href="">See More</a>
+            </div>
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+          <!-- <div class="tanks">TANKS!</div>
+          <div class="stationary">Staionary</div> -->
+        </div>
+        <div class="thincolumn">
+          <div class="card">
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+          <!-- <div class="untitled">Untitled/WIP</div>
+          <div class="talismans">Shifting Talismans</div>
+          <div class="eat">Eat n' Defeat</div> -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container about">
+      <div class="about text">
+        <h2>About Me</h2>
+        <span>
+          Hi, my name is Tyler Wang and I'm a student at Rochester Institute of Technology. I'm a game developer and artist who is actively pursuing a career in the game industry. I love programming and designing things, spending most of my time creating personal projects and learning new skills along the way. Aside from coding I also enjoy creating pixel art and drawing, as well as listening to music and playing games.
+        <span>
       </div>
     </div>
 
-    <br><br>
-    <h1>TYLER WANG</h1>
-    <p>Game Programmer and Artist</p>
-
-
-    <img src="Images/wip.png" alt="wip">
+    <div class="container contact">
+      <div class="contact text">
+        <h2>Contact</h2>
+        <span>
+          Email, linkedin, and github.
+        <span>
+      </div>
+      
+    </div>
+    
   </body>
 </html>
 

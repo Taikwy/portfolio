@@ -1,0 +1,9 @@
+.experience.container{
+    font-size: 3rem;
+    text-align: center;
+    /* min-height: 30vh; */
+    height: 100vh;
+    background-color: darkolivegreen;
+    
+    border: 1px solid blueviolet;
+}

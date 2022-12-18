@@ -1,0 +1,307 @@
+.projects.container{
+    height: 200vh;
+    background-color: darkcyan;
+    
+    border: 1px solid lightcoral;
+}
+
+.projects .about.flex{
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 1px solid darkgoldenrod;
+}
+
+.projects img {
+    border: 1px solid black;
+    width: 55%;
+}
+
+.projects .text{
+    text-align: left;
+    width: 40%;
+    border: 1px solid blue;
+}
+
+
+
+.projects .header{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+.projects .desc{
+    font-size: 2rem;
+    /* width: 45%; */
+}
+
+
+
+.projects .items.flexcolumn{
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    background-color: rebeccapurple;
+    border: 1px solid blue;
+}
+
+.projects .widecolumn{
+    width: 50%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    border: 1px solid lightgreen;
+}
+
+.projects .thincolumn{
+    width: 35%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    border: 1px solid indianred;
+}
+
+/* .projects .flexcolumn .card{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+
+    border: 2px solid black;
+}
+
+.projects .card img{
+    width: 100%;
+} */
+
+
+/* Card */
+.projects .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* background image holder */
+.projects .card .image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* z-index: 10000; */
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+/* background image modifier when hovering card */
+.projects .card:hover .image{
+    /* top: 0%;
+    transform: translateY(0%); */
+}
+/* ACTUAL card background image */
+.projects .card .image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .4;
+    width: 300px;
+    transition: 0.5s;
+}.projects .card:hover .image img{
+    opacity: .2;
+}
+.projects .card .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    color: #9bdc28;
+    background-color: purple;
+    transition: 0.7s;
+}
+.projects .card:hover .title{
+    opacity: 1;
+}
+/* project title text */
+.projects .card .title h2{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%); */
+}
+
+
+/* holder of text before it pops up */
+.projects .card .content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+/* content holder on hover */
+.projects .card:hover .content{
+    height: 160px;
+}
+
+/* platform and platform */
+.projects .card .content .desc, .projects .card .content .platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* description on hover */
+.projects .card:hover .content .desc{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+/* platform on hover */
+.projects .card:hover .content .platform{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+/* description and platform text */
+.projects .card .content .desc h3, .projects .card .content .platform h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+/* description extra text */
+.projects .card .content .desc span{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* description extra text on hover */
+.projects .card .content .desc span:hover{
+    background: #9bdc28;
+}
+/* platform extra text */
+.projects .card .content .platform span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* platform info individual child*/
+.projects .card .content .platform span:nth-child(2){
+    background: #9bdc28;
+}
+/* expand button */
+.projects .card .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+/* expand button on card hover */
+.projects .card:hover .content a{
+    opacity: 1;
+    transform: translateY(0px); 
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.projects .tanks{
+    flex: 3 1 auto;
+    margin: 0 50px;
+
+    border: 1px solid orange;
+
+}
+.projects .stationary{
+    flex: 3 1 auto;
+    margin: 0 50px;
+
+    border: 1px solid red;
+    
+}
+.projects .untitled{
+    flex: 2 1 auto;
+    margin: 0 50px;
+
+    border: 1px solid blueviolet;
+    
+}
+.projects .talismans{
+    flex: 2 1 auto;
+    margin: 0 50px;
+
+    border: 1px solid slateblue;
+    
+}
+.projects .eat{
+    flex: 2 1 auto;
+    margin: 0 50px;
+
+    border: 1px solid wheat;
+    
+} */
