@@ -1,5 +1,5 @@
 .projects.container{
-    height: 200vh;
+    /* height: 250vh; */
     background-color: darkcyan;
     
     border: 1px solid lightcoral;
@@ -56,6 +56,18 @@
     border: 1px solid blue;
 }
 
+.projects .experience{
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    border: 1px solid hotpink;
+}
+
 .projects .widecolumn{
     width: 50%;
     margin: auto;
@@ -92,11 +104,25 @@
     width: 100%;
 } */
 
+/* Experience Card */
+.projects .experience .card{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.projects .experience .card .image img{
+    width: 800px;
+}.projects .experience .card:hover .image img{
+    width: 1000px;
+}
 
 /* Card */
 .projects .card{
     position: relative;
-    width: 320px;
+    width: 450px;
     height: 450px;
     background: #232323;
     border-radius: 20px;
@@ -124,10 +150,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .4;
-    width: 300px;
+    width: 450px;
     transition: 0.5s;
 }.projects .card:hover .image img{
     opacity: .2;
+    width: 500px;
 }
 .projects .card .title{
     position: absolute;
@@ -236,22 +263,16 @@
     background: #9bdc28;
 }
 /* expand button */
-.projects .card .content a{
-    display: inline-block;
+.projects .card .content button{
     padding: 10px 20px;
-    background: #fff;
-    border-radius: 4px;
     margin-top: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #111;
     opacity: 0;
     transform: translateY(50px);
     transition: 0.5s;
-    margin-top: 0;
 }
+
 /* expand button on card hover */
-.projects .card:hover .content a{
+.projects .card:hover .content button{
     opacity: 1;
     transform: translateY(0px); 
     transition-delay: 0.75s;

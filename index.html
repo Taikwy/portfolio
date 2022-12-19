@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="CSS/landing.css">
     <link rel="stylesheet" href="CSS/experience.css">
     <link rel="stylesheet" href="CSS/projects.css">
-    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/projects-expanded.css">
+    <link rel="stylesheet" href="CSS/aboutme.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script src="src/index.js" type="module"></script>
+    <script src="src/navbar.js" type="module"></script>
+    <script src="src/projects-expanded.js" type="module"></script>
   </head>
 
   <body>
 
-    <div class="navbar container">
+    <div class="navbar container" id="navbar">
       <ul>
         <li><a href="./index.html" id = "home" class="active">HOME</a></li>
         <li><a href="./projects.html" id = "projects">PROJECTS</a></li>
@@ -22,7 +30,7 @@
       </ul>
     </div>
 
-    <div class="container landing flex">
+    <div class="container landing flex" id="section2">
       <div class="image"></div>
       <div class="text">
         <h1>TYLER WANG</h1>
@@ -37,15 +45,6 @@
       </div>
     </div>
     
-    <!-- <div class="container experience">
-      <div class="experience text">
-        <h2>Experience</h2>
-        <span>
-          Darkwind Media co-op.
-        <span>
-      </div>
-    </div> -->
-    
     <div class="container projects">
       <div class="about flex">
         <div class="text">
@@ -58,6 +57,36 @@
       </div>
 
       <div class="items flexcolumn">
+
+        <div class="experience">
+          <div class="card">
+            <div class="title">
+              <h2>Darkwind Media</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Junior Game Developer</span>
+              </div>
+              <div class="platform">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              
+              <button class="button open-button">See More</button>
+              <dialog class="modal" id="modal">
+                <h2>An interesting title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+                <button class="button close-button">close modal</button>
+              </dialog>
+            </div>
+            <div class="image">
+              <img src="images/face.png" alt="wip">
+            </div>
+          </div>
+        </div>
+
         <div class="widecolumn">
 
           <div class="card">
@@ -73,7 +102,14 @@
                 <span></span>
                 <span></span>
               </div>
-              <a href="">See More</a>
+              
+              <button class="button open-button">See More</button>
+              <dialog class="modal" id="modal">
+                <h2>An interesting title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+                <button class="button close-button">close modal</button>
+              </dialog>
             </div>
             <div class="image">
               <img src="images/face.png" alt="wip">
@@ -111,24 +147,36 @@
       </div>
     </div>
     
-    <div class="container about">
-      <div class="about text">
-        <h2>About Me</h2>
-        <span>
-          Hi, my name is Tyler Wang and I'm a student at Rochester Institute of Technology. I'm a game developer and artist who is actively pursuing a career in the game industry. I love programming and designing things, spending most of my time creating personal projects and learning new skills along the way. Aside from coding I also enjoy creating pixel art and drawing, as well as listening to music and playing games.
-        <span>
+    <div class="container aboutme">
+      <div class="header">About Me</div>
+      <div class="desc flex">
+        <div class="life text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam est cum aliquid quia officia fugiat aperiam, sit similique facilis illo eum repellat ipsa voluptates quaerat temporibus magnam quis ratione impedit accusamus sapiente itaque esse necessitatibus! In, explicabo. Itaque sequi hic expedita iste cupiditate quos sed tempore quasi nihil! Rerum, magnam.
+        </div>
+        <img src="images/SSHornet.png" alt="wip">
+        <img src="images/SSHornet.png" alt="wip">
+        <div class="interests text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam est cum aliquid quia officia fugiat aperiam, sit similique facilis illo eum repellat ipsa voluptates quaerat temporibus magnam quis ratione impedit accusamus sapiente itaque esse necessitatibus! In, explicabo. Itaque sequi hic expedita iste cupiditate quos sed tempore quasi nihil! Rerum, magnam.
+        </div>
       </div>
     </div>
 
-    <div class="container contact">
+    <!-- <div class="container contact">
       <div class="contact text">
         <h2>Contact</h2>
         <span>
           Email, linkedin, and github.
         <span>
       </div>
-      
-    </div>
+    </div> -->
+
+    <footer class="footer">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="text">
+        <h1>TW 2022</h1>
+        <span>LinkedIn Github etc</span>
+      </div>
+    </footer>
     
   </body>
 </html>

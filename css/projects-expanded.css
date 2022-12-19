@@ -1,0 +1,9 @@
+.projects .modal {
+    width: 50vw;
+    height: 60vh;
+}
+  
+.projects .modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+  

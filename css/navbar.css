@@ -1,4 +1,3 @@
-
 .navbar.container{
     /* width: 100%; */
     text-align: center;
@@ -11,6 +10,8 @@
     opacity: .8;
     background-color: green;
     border: 1px solid red;
+
+    /* backdrop-filter: blur(10px); */
 }
 
 .navbar ul{
