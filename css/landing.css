@@ -2,15 +2,20 @@
 .landing{
     border: 1px solid white;
 }
-
 .landing.container{
-    font-size: 3rem;
     text-align: center;
     /* min-height: 30vh; */
     height: 100vh;
     background-color: purple;
+    background-color: black;
+    color: #FFDEBD;
 }
 
+.landing h1{
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Rosario', sans-serif;
+}
 
 .landing.flex{
     display: flex;
@@ -20,7 +25,53 @@
     align-items: center;
 }
 
+/* ===================================================================== */
+.landing .text{
+    font-size: 2rem;
+}
 .landing h1{
-    font-size: 6rem;
+    font-size: 8rem;
     margin: 0;
 }
+
+/* ===================================================================== */
+.landing .links{
+    /* border: 1px solid white; */
+    margin: 16px;
+}
+.landing svg{
+    width: 2.5rem;
+    fill: currentColor;
+}
+.landing a{
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+
+    animation: animateGlow 1.2s alternate infinite linear;
+    /* filter: drop-shadow(0 0 25px #8300FF); */
+    /* filter: drop-shadow(0 0 25px #8300FF) drop-shadow(0 0 5px #8300FF); */
+
+    /* color: #8300FF; */
+
+}.landing a:visited{
+
+}.landing a:hover{
+    animation: none;
+    color: #C869FF;
+    filter: drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 12px #7700FF);
+    
+}.landing a:active{
+    
+}
+@keyframes animateGlow {
+    0% {
+        /* color: #009BFF; */
+        color: #5800C8;
+        filter: drop-shadow(0 0 0px);
+    }
+    100% {
+        color: #AF69FF;
+        filter: drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 5px #7700FF);
+    }
+  }

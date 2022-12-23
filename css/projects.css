@@ -5,6 +5,38 @@
     border: 1px solid lightcoral;
 }
 
+.projects.container {
+    background-color: #155F94;
+    background-image: linear-gradient(
+        45deg,
+        #15354C 25%,
+        transparent 25%,
+        transparent 75%,
+        #15354C 75%,
+        #15354C
+      ),
+      linear-gradient(
+        -45deg,
+        #15354C 25%,
+        transparent 25%,
+        transparent 75%,
+        #15354C 75%,
+        #15354C
+      );
+    background-size: 60px 60px;
+    background-position: 0 0;
+    animation: slide 3s infinite linear;
+}
+@keyframes slide {
+    from {
+      background-position: 0 0;
+    }
+  
+    to {
+      background-position: -120px 60px;
+    }
+}
+
 .projects .about.flex{
     width: 60%;
     height: 80vh;
@@ -30,18 +62,19 @@
     border: 1px solid blue;
 }
 
-
-
 .projects .header{
     font-size: 5rem;
     margin: 30px 0;
 }
 .projects .desc{
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* width: 45%; */
 }
 
-
+.projects .title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
 
 .projects .items.flexcolumn{
     width: 60%;
@@ -52,23 +85,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    background-color: rebeccapurple;
+    background-color: black;
     border: 1px solid blue;
-}
-
-.projects .experience{
-    width: 70%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
-    border: 1px solid hotpink;
-}
-
-.projects .widecolumn{
+}.projects .widecolumn{
     width: 50%;
     margin: auto;
 
@@ -78,9 +97,7 @@
     justify-content: space-between;
     
     border: 1px solid lightgreen;
-}
-
-.projects .thincolumn{
+}.projects .thincolumn{
     width: 35%;
     margin: auto;
 
@@ -92,39 +109,12 @@
     border: 1px solid indianred;
 }
 
-/* .projects .flexcolumn .card{
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-
-    border: 2px solid black;
-}
-
-.projects .card img{
-    width: 100%;
-} */
-
-/* Experience Card */
-.projects .experience .card{
-    position: relative;
-    width: 800px;
-    height: 800px;
-    background: #232323;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.projects .experience .card .image img{
-    width: 800px;
-}.projects .experience .card:hover .image img{
-    width: 1000px;
-}
-
 /* Card */
 .projects .card{
     position: relative;
     width: 450px;
     height: 450px;
-    background: #232323;
+    background: black;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -133,7 +123,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* z-index: 10000; */
     width: 100%;
     height: 220px;
     transition: 0.5s;
@@ -149,35 +138,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: .4;
+    /* opacity: .4; */
     width: 450px;
     transition: 0.5s;
 }.projects .card:hover .image img{
-    opacity: .2;
     width: 500px;
 }
 .projects .card .title{
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-    color: #9bdc28;
-    background-color: purple;
     transition: 0.7s;
+    color: white;
+    background-color: black;
 }
 .projects .card:hover .title{
     opacity: 1;
 }
 /* project title text */
 .projects .card .title h2{
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%); */
 }
 
 
@@ -193,136 +177,95 @@
 }
 /* content holder on hover */
 .projects .card:hover .content{
-    height: 160px;
+    height: 170px;
 }
 
-/* platform and platform */
-.projects .card .content .desc, .projects .card .content .platform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-    transition: 0.5s;
+.projects .card .content .desc{
     opacity: 0;
     visibility: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
+    
+    transition: 0.5s;
 }
 /* description on hover */
 .projects .card:hover .content .desc{
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.5s;
+    /* transition-delay: 0.5s; */
 }
+
+/* platform */
+.projects .card .content .platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
 /* platform on hover */
 .projects .card:hover .content .platform{
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.6s;
-}
-/* description and platform text */
-.projects .card .content .desc h3, .projects .card .content .platform h3{
-    color: #fff;
-    font-weight: 300;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
+    /* transition-delay: 0.6s; */
 }
 /* description extra text */
 .projects .card .content .desc span{
-    width: 200px;
+    width: 300px;
     height: 30px;
     text-align: center;
-    line-height: 26px;
-    font-size: 14px;
+    font-size: 1rem;
     display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: 0.5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: white;
 }
-/* description extra text on hover */
-.projects .card .content .desc span:hover{
-    background: #9bdc28;
+
+.projects .platform{
 }
-/* platform extra text */
-.projects .card .content .platform span{
-    width: 20px;
-    height: 20px;
-    background: #ff0;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+.projects .platform i{
+    font-size: 3rem;
 }
-/* platform info individual child*/
-.projects .card .content .platform span:nth-child(2){
-    background: #9bdc28;
-}
+
+
 /* expand button */
 .projects .card .content button{
     padding: 10px 20px;
     margin-top: 10px;
     opacity: 0;
-    transform: translateY(50px);
+    /* transform: translateY(50px); */
     transition: 0.5s;
 }
-
 /* expand button on card hover */
 .projects .card:hover .content button{
     opacity: 1;
-    transform: translateY(0px); 
-    transition-delay: 0.75s;
+    /* transform: translateY(0px);  */
+    /* transition-delay: 0.65s; */
 }
 
+.projects button{
+    color:inherit;
+    font-family:inherit;
+    font-size: inherit;
+    background: white;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+  }
+  
+  .projects button:last-child {
+    margin: 0;
+  }
+  
+  .projects button:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+  }
+  
+  .projects button:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+  }
 
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.projects .tanks{
-    flex: 3 1 auto;
-    margin: 0 50px;
-
-    border: 1px solid orange;
-
-}
-.projects .stationary{
-    flex: 3 1 auto;
-    margin: 0 50px;
-
-    border: 1px solid red;
-    
-}
-.projects .untitled{
-    flex: 2 1 auto;
-    margin: 0 50px;
-
-    border: 1px solid blueviolet;
-    
-}
-.projects .talismans{
-    flex: 2 1 auto;
-    margin: 0 50px;
-
-    border: 1px solid slateblue;
-    
-}
-.projects .eat{
-    flex: 2 1 auto;
-    margin: 0 50px;
-
-    border: 1px solid wheat;
-    
-} */
+  .projects dialog::backdrop {
+    background: #ccf8;
+  }
