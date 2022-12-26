@@ -23,8 +23,10 @@ function navScrollFunction() {
 
 function navDefault(){
     navBar.style.transitionDuration = "0s";
-    navBar.style.top = "20px";
+    navBar.style.top = "30px";
     navBar.style.position = 'absolute';
+    navBar.style.backdropFilter = 'none';
+    
     
     navBar.style.backgroundColor = "transparent";
 }
@@ -32,8 +34,9 @@ function navScrollAppear(){
     navBar.style.transitionDuration = "0.4s";
     navBar.style.top = "0";
     navBar.style.position = 'fixed';
+    navBar.style.backdropFilter = 'blur(5px)';
 
-    navBar.style.backgroundColor = "rgba(50,0,107,.6)";
+    navBar.style.backgroundColor = "rgba(0,0,0,.6)";
 }
 function navScrollDissapear(){
     navBar.style.top = "-100";

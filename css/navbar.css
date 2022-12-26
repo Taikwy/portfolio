@@ -5,46 +5,104 @@
     /* height: 100px; */
 
     
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, 0);
 
     z-index: 100;
-    /* background-color: rgba(15,156,47,.5); */
-    /* border: 1px solid red; */
-
-    backdrop-filter: blur(5px);
 }
 
 .navbar ul{
     list-style-type: none;
     overflow: hidden;
     text-align: center;
-    /* background-color: #666; */
-    /* border: 1px solid silver; */
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
+    /* background-color: aqua; */
 }
 
 .navbar li {
-    float: left;    
+    float: left;  
+    padding: 0px 40px; 
 }
 
-.navbar li a{
-    text-decoration: none;
+li a {
+    position: relative;
     display: block;
+    text-decoration: none;
     text-align: center;
-    padding: 14px 16px;
-    margin: 0 32px;
+    font-size: 1.1rem;
+    padding: 4px 0px;
+
+    transition: all .2s;
+    color: white;
+}.navbar li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+
+  color: transparent;
+  background: white;
+  height: 2px;
+  
+  transition: all .5s;
+}.navbar a:hover{
+    color: #AF69FF;
+}.navbar li a:hover:after {
+    width: 100%;
     
-    color: #FFDEBD;
-    /* background-color: darkgray; */
+    background: #AF69FF;
 }
 
-.navbar li a:hover {
-    background-color: #111;
+.link {
+  height: 30px;
+  align-items: center;
+  display: flex;
+}
+.mask {
+  position: relative;
+  padding: 0;
+  height: 25px;
+
+  overflow: hidden;
+}
+.link-container {
+  transition: transform 0.25s ease;
+}
+.link .text {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 25px;
+
+  transition: transform 0.25s ease;
+}
+
+.link-text1 {
+  transform-origin: right center;
+}.link-text2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+/* Hover Action*/
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-25px);
+}
+/* Rotate texts a little bit */
+.link:hover .link-text1 {
+  transform: rotate(20deg);
+}.link:hover .link-text2 {
+  transform: rotate(0);
 }

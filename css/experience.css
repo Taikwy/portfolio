@@ -1,40 +1,88 @@
-.experience{
+.experience.container {
+    background-color: darkcyan;
+    
+    border: 1px solid hotpink;
+    background-image: linear-gradient(
+        45deg,
+        #15354C 25%,
+        transparent 25%,
+        transparent 75%,
+        #15354C 75%,
+        #15354C
+      ),
+      linear-gradient(
+        -45deg,
+        #15354C 25%,
+        transparent 25%,
+        transparent 75%,
+        #15354C 75%,
+        #15354C
+      );
+    background-size: 60px 60px;
+    background-position: 0 0;
+    animation: slide 3s infinite linear;
+}
+@keyframes slide {
+    from {
+      background-position: 0 0;
+    }
+  
+    to {
+      background-position: -120px 60px;
+    }
+}
+
+.experience .about.flex{
     width: 70%;
     margin: auto;
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     
-    border: 1px solid hotpink;
-}
-
-.projects .experience .title{
+    border: 1px solid darkgoldenrod;
+}.experience img {
+    border: 1px solid black;
+    width: 55%;
+    height: 50%;
+}.experience .text{
+    text-align: left;
+    width: 40%;
+    border: 1px solid blue;
+}.experience .header{
+    font-size: 5rem;
+    margin: 30px 0;
+}experience .desc{
+    font-size: 1.5rem;
+}.experience .title{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
 }
 
 
 /* Experience Card */
-.projects .experience .card{
+.experience .card{
     position: relative;
     overflow: hidden;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     border-radius: 20px;
+    
+    margin: 20px auto;
     
     background: black;
 }
-.projects .experience .card .image img{
+.experience .card .image img{
     width: 100px;
     /* width: 800px; */
-}.projects .experience .card:hover .image img{
+}.experience .card:hover .image img{
     /* width: 1000px; */
 }
 
 /* background image holder */
-.projects .experience .card .image{
+.experience .card .image{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -43,7 +91,7 @@
     height: 220px;
     transition: 0.5s;
 }
-.projects .experience .card .title{
+.experience .card .title{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +103,7 @@
     background-color: darkolivegreen;
     transition: 0.7s;
 }
-.projects .experience .card:hover .title{
+ .experience .card:hover .title{
     opacity: 1;
 }
 

@@ -19,12 +19,12 @@ for(let i = 0; i < modals.length; i++){
   openModals[i].addEventListener("click", () => {
     console.log("open");
     modals[i].showModal();
-    document.body.style.overflow = 'hidden';
+    // document.body.style.overflow = 'hidden';
   });
   closeModals[i].addEventListener("click", () => {
     console.log("close");
     modals[i].close();
-    document.body.style.overflow = '';
+    // document.body.style.overflow = '';
   });
 }
 
@@ -33,9 +33,15 @@ const dialogs = document.querySelectorAll("dialog");
 
 for(let i = 0; i < dialogs.length; i++){
   dialogs[i].addEventListener('click', (e) => {
+    console.log(e.target);
     if (e.target === dialogs[i]) {
-      dialogs[i].close();
-      document.body.style.overflow = '';
+      // dialogs[i].close();
+      // document.body.style.overflow = '';
+    }
+    if (!$(e.target).closest(".modal,open-button").length) {
+      console.log(e.target);
+      // modal.close();
+      // $("body").find(".modal").removeClass("visible");
     }
   });
 }
