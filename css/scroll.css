@@ -13,7 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 48px;
-  animation: nudgeMouse 5.5s ease-out infinite;
+  animation: nudgeMouse 5s ease-out infinite;
 }
 
 .mouse:after {
@@ -22,7 +22,7 @@
   width: 7px;
   height: 7px;
   border-radius: 100%;
-  animation: trackBallSlide 5.5s linear infinite;
+  animation: trackBallSlide 5s linear infinite;
   position: absolute;
   top: 0;
   right: 0;
@@ -30,6 +30,14 @@
   left: 0;
   margin: auto;
   transform:translateY(20px);
+}
+
+.mouse .mouse-left .Animate-Draw {
+  animation: DrawLine 5s ease-out infinite;
+}
+
+.mouse .mouse-right .Animate-Draw {
+  animation: DrawLineBack 5s ease-out infinite;
 }
 
 .mouse .frame {
@@ -64,13 +72,7 @@
   fill-opacity: 1;
 }
 
-.mouse .mouse-left .Animate-Draw {
-  animation: DrawLine 5.5s ease-out infinite;
-}
 
-.mouse .mouse-right .Animate-Draw {
-  animation: DrawLineBack 5.5s ease-out infinite;
-}
 
 
 /*Keyframes*/

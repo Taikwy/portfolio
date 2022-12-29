@@ -1,35 +1,8 @@
 .experience.container {
-    background-color: darkcyan;
-    
-    border: 1px solid hotpink;
-    background-image: linear-gradient(
-        45deg,
-        #15354C 25%,
-        transparent 25%,
-        transparent 75%,
-        #15354C 75%,
-        #15354C
-      ),
-      linear-gradient(
-        -45deg,
-        #15354C 25%,
-        transparent 25%,
-        transparent 75%,
-        #15354C 75%,
-        #15354C
-      );
-    background-size: 60px 60px;
-    background-position: 0 0;
-    animation: slide 3s infinite linear;
-}
-@keyframes slide {
-    from {
-      background-position: 0 0;
-    }
-  
-    to {
-      background-position: -120px 60px;
-    }
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+    /* border: 1px solid hotpink; */
 }
 
 .experience .about.flex{
@@ -42,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     
-    border: 1px solid darkgoldenrod;
+    /* border: 1px solid darkgoldenrod; */
 }.experience img {
     border: 1px solid black;
     width: 55%;
@@ -50,35 +23,34 @@
 }.experience .text{
     text-align: left;
     width: 40%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }.experience .header{
     font-size: 5rem;
     margin: 30px 0;
-}experience .desc{
+}.experience .desc{
     font-size: 1.5rem;
 }.experience .title{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
 }
 
-
-/* Experience Card */
+/* Card */
 .experience .card{
-    position: relative;
     overflow: hidden;
-    width: 600px;
-    height: 600px;
+    position: relative;
     border-radius: 20px;
-    
-    margin: 20px auto;
-    
-    background: black;
-}
-.experience .card .image img{
-    width: 100px;
-    /* width: 800px; */
-}.experience .card:hover .image img{
-    /* width: 1000px; */
+    margin: 20px;
+    box-sizing: border-box;
+    width: 750px;
+    height: 500px;
+
+    border: 4px solid transparent;
+    /* background: black; */
+    transition: 0.4s;
+}.experience .card:hover{
+    animation: none;
+    box-shadow: 0px 0px 25px 2px white;
+    border: 5px solid white;
 }
 
 /* background image holder */
@@ -86,25 +58,43 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* z-index: 10000; */
     width: 100%;
-    height: 220px;
-    transition: 0.5s;
+    height: 100%;
+    z-index: 1;
+    transition: 0.3s;
+}.experience .card:hover .image{
+    filter: brightness(50%) blur(5px);
 }
-.experience .card .title{
+.experience .card .image img{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    width: 800px;
+    transition: 0.5s;
+}.experience .card:hover .image img{
+    width: 1000px;
+}
+.experience .card .title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-    color: white;
-    background-color: darkolivegreen;
-    transition: 0.7s;
-}
- .experience .card:hover .title{
+    transition: 0.5s;
+    /* background-color: black; */
+}.experience .card:hover .title{
     opacity: 1;
+}
+.experience .card h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 6rem;
+
+    color: white;
 }
 
 /* holder of text before it pops up */
@@ -114,95 +104,83 @@
     width: 100%;
     height: 0px;
     text-align: center;
-    transition: 1s;
+    transition: .6s;
     z-index: 10;
-}
-/* content holder on hover */
-.experience .card:hover .content{
-    height: 160px;
+}.experience .card:hover .content{
+    height: 180px;
 }
 
-/* desc and platform */
 .experience .card .content .desc{
-    padding: 8px 20px;
-    transition: 0.5s;
     opacity: 0;
     visibility: hidden;
-}
-.experience .card .content .platform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-/* description on hover */
-.experience .card:hover .content .desc{
+    
+    transition: 0.4s;
+}.experience .card:hover .content .desc{
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.5s;
 }
-/* platform on hover */
-.experience .card:hover .content .platform{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.6s;
-}
-/* description and platform text */
-.experience .card .content .desc h3, .experience .card .content .platform h3{
-    color: #fff;
-    font-weight: 300;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
-}
-/* description extra text */
+
 .experience .card .content .desc span{
-    width: 200px;
+    width: 300px;
     height: 30px;
     text-align: center;
-    line-height: 26px;
-    font-size: 14px;
+    font-size: 1rem;
     display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: 0.5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
-}
-/* description extra text on hover */
-.experience .card .content .desc span:hover{
-    background: #9bdc28;
-}
-/* platform extra text */
-.experience .card .content .platform span{
-    width: 20px;
-    height: 20px;
-    background: #ff0;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-/* expand button */
-.experience .card .content button{
-    padding: 10px 20px;
-    margin-top: 10px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 0.5s;
+    color: white;
 }
 
-/* expand button on card hover */
 .experience .card:hover .content button{
     opacity: 1;
-    transform: translateY(0px); 
-    transition-delay: 0.75s;
 }
 
+.experience button{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+    color: white;
+    font-family:inherit;
+    font-size: 1rem;
+
+    border: none;
+    background-color: transparent;
+    /* background-color: yellow; */
+    padding: 10px 25px;
+    margin-top: -40px;
+}
+  
+
+.svg-wrapper {
+    margin-top: 30px;
+    position: relative;
+    width: 140px;
+    /*make sure to use same height/width as in the html*/
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* background-color: red; */
+
+    box-shadow: 0 0 0 black;
+    transition: .2s all ease;
+  }.svg-wrapper:hover{
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0 black;
+  }.svg-wrapper:active{
+    transform: translate(0, 0);
+    box-shadow: 0 0 0 black;
+  }
+  #shape {
+    stroke-width: 4px;
+    fill: transparent;
+    stroke: white;
+    stroke-dasharray: 90 400;
+    stroke-dashoffset: -205;
+    transition: .75s all ease;
+  }.svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 8px;
+    stroke-dashoffset: 0;
+    stroke: #06D6A0;
+  }

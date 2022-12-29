@@ -3,10 +3,11 @@
 }
 .projects .modal {
     width: 65vw;
-    height: 76vh;
+    height: 75vh;
     padding: 0px;
 
-    background-color: #384367;
+    background-color: #2C1F5F;
+    color: white;
 }
 .projects .modal hr{
     width: 95%;
@@ -24,28 +25,22 @@
     /* display: inline; */
     font-family: 'Bebas Neue', cursive;
     font-size: 10rem;
-    line-height: 8rem;
+    line-height: 6rem;
     text-align: left;
-    margin-left: 40px;
-    margin-top: 50px;
+    margin-left: 50px;
+    margin-top: 60px;
 
-    color: black;
+    color: #3BF6FF;
     /* background-color: red; */
 }  
 
-.projects .modal .flex{
-    width: 38%;
+.projects .modal .about{
+    width: 35%;
     max-height: 500px;
     /* margin: auto; */
-    margin-left: 40px;
+    margin-right: 50px;
     text-align: left;
-    font-size: 1.2rem;
-
-
-    /* font-family: 'Barlow', sans-serif; */
-    /* font-family: 'Familjen Grotesk', sans-serif; */
-    /* font-family: 'Hanken Grotesk', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
+    overflow: hidden;
     
     /* background-color: gray; */
     /* border: 1px solid blue; */
@@ -58,7 +53,32 @@
     font-size: 1.2rem;
 }
 
-.project{
+.project span{
+    display: inline-block;
+    width: 35%;
+}.modalflex .project{
+    font-size: 1.2rem;
+
+    /* font-family: 'Familjen Grotesk', sans-serif; */
+    /* font-family: 'Hanken Grotesk', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.holder{
+    /* background-color: red; */
+    padding: 0px 20px;
+}
+.holder hr{
+    display: inline-block;
+    border: 2px solid white;
+    margin: 20px auto;
+    
+}.modalflex hr{
+    display: inline-block;
+    border: 1px solid #3BF6FF;
+    margin: 15px auto;
+    margin-bottom: 25px;
+    padding-left: 50px;
 }
 
 /* ===================================================================== */
@@ -95,7 +115,10 @@
     width: 55%;
     max-height: 500px;
     overflow: hidden;
-    margin-right: 25px;
+    margin-left: 45px;
+
+    box-sizing: border-box;
+    border: 4px solid black;
 }
 .projects .modal .showcase img{
     width: 100%;
@@ -105,8 +128,8 @@
     width: 125px;
     /*make sure to use same height/width as in the html*/
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: 45px;
+    top: 20px;
 }.modal .project .itch #shape {
     stroke-dasharray: 40 400;
     stroke-dashoffset: -125;
@@ -121,8 +144,8 @@
     width: 120px;
     /*make sure to use same height/width as in the html*/
     position: absolute;
-    right: 20px;
-    top: 80px;
+    right: 45px;
+    top: 75px;
 }.modal .project .git #shape {
     stroke-dasharray: 40 400;
     stroke-dashoffset: -120;
@@ -149,13 +172,26 @@
     stroke: black;
 }
 
-.modal .svg-wrapper.close {
+.modalflex .about{
+    position: relative;
+}
+.modalflex .closebutton{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.modalflex .svg-wrapper.close {
     width: 100px;
     /*make sure to use same height/width as in the html*/
-    margin-top: 30px;
-}.modal #shape {
+}.svg-wrapper.close:hover{
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0 black;
+    background-color: #564399;
+  }.modalflex #shape {
     stroke-dasharray: 58 400;
     stroke-dashoffset: -157;
-}.modal .svg-wrapper:hover #shape {
-    stroke: #06D6A0;
+}.modalflex .svg-wrapper:hover #shape {
+    stroke: #FF0000;
 }
