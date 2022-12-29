@@ -1,11 +1,161 @@
-.projects .modal {
-    width: 50vw;
-    height: 60vh;
-
-    color: black;
-}
-  
 .projects .modal::backdrop {
     background: rgb(0 0 0 / 0.4);
 }
-  
+.projects .modal {
+    width: 65vw;
+    height: 76vh;
+    padding: 0px;
+
+    background-color: #384367;
+}
+.projects .modal hr{
+    width: 95%;
+}
+
+.projects .modalflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.projects .modal h2{
+    /* display: inline; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10rem;
+    line-height: 8rem;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 50px;
+
+    color: black;
+    /* background-color: red; */
+}  
+
+.projects .modal .flex{
+    width: 38%;
+    max-height: 500px;
+    /* margin: auto; */
+    margin-left: 40px;
+    text-align: left;
+    font-size: 1.2rem;
+
+
+    /* font-family: 'Barlow', sans-serif; */
+    /* font-family: 'Familjen Grotesk', sans-serif; */
+    /* font-family: 'Hanken Grotesk', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    
+    /* background-color: gray; */
+    /* border: 1px solid blue; */
+}
+
+.project h3{
+    display: inline;
+    margin: 0px;
+    color: #3BF6FF;
+    font-size: 1.2rem;
+}
+
+.project{
+}
+
+/* ===================================================================== */
+.projects .platforms{
+    margin: 16px;
+}
+.projects .platforms{
+    font-size: 2.5rem;
+}
+.projects i{
+    text-align: center;
+    text-decoration: none;
+
+    animation: animateGlow 1.2s alternate infinite linear;
+}.projects i:hover{
+    animation: none;
+    color: #C558FF;
+    filter: drop-shadow(0 0 20px #7700FF) drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 5px #7700FF);
+    
+}
+@keyframes animateGlow {
+    0% {
+        /* color: #009BFF; */
+        color: #5800C8;
+        filter: drop-shadow(0 0 0px);
+    }
+    100% {
+        color: #AF69FF;
+        filter: drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 10px #7700FF);
+    }
+}
+
+.projects .modal .showcase{
+    width: 55%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-right: 25px;
+}
+.projects .modal .showcase img{
+    width: 100%;
+}
+
+.modal .svg-wrapper.itch {
+    width: 125px;
+    /*make sure to use same height/width as in the html*/
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}.modal .project .itch #shape {
+    stroke-dasharray: 40 400;
+    stroke-dashoffset: -125;
+}.modal .project .svg-wrapper.itch:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke: #fa5c5c;
+}
+
+.modal .svg-wrapper.git {
+    width: 120px;
+    /*make sure to use same height/width as in the html*/
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}.modal .project .git #shape {
+    stroke-dasharray: 40 400;
+    stroke-dashoffset: -120;
+}.modal .project .svg-wrapper.git:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke: black;
+}
+
+.modal .svg-wrapper.site {
+    width: 130px;
+    /*make sure to use same height/width as in the html*/
+    position: absolute;
+    right: 320px;
+    top: 80px;
+}.modal .project .site #shape {
+    stroke-dasharray: 40 400;
+    stroke-dashoffset: -130;
+}.modal .project .svg-wrapper.site:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke: black;
+}
+
+.modal .svg-wrapper.close {
+    width: 100px;
+    /*make sure to use same height/width as in the html*/
+    margin-top: 30px;
+}.modal #shape {
+    stroke-dasharray: 58 400;
+    stroke-dashoffset: -157;
+}.modal .svg-wrapper:hover #shape {
+    stroke: #06D6A0;
+}

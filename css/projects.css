@@ -1,7 +1,7 @@
 .projects.container {
     background-color: #155F94;
-    border: 1px solid lightcoral;
-    background-image: linear-gradient(
+    /* border: 1px solid lightcoral; */
+    /* background-image: linear-gradient(
         45deg,
         #15354C 25%,
         transparent 25%,
@@ -19,9 +19,13 @@
       );
     background-size: 60px 60px;
     background-position: 0 0;
-    animation: slide 3s infinite linear;
+    animation: slide 3s infinite linear; */
+
+    
+    background-color: black;
+    color: white;
 }
-@keyframes slide {
+/* @keyframes slide {
     from {
       background-position: 0 0;
     }
@@ -29,7 +33,7 @@
     to {
       background-position: -120px 60px;
     }
-}
+} */
 
 .projects .about.flex{
     width: 70%;
@@ -41,20 +45,19 @@
     justify-content: space-between;
     align-items: center;
     
-    border: 1px solid darkgoldenrod;
+    /* border: 1px solid darkgoldenrod; */
 }.projects img {
     border: 1px solid black;
     width: 55%;
 }.projects .text{
     text-align: left;
     width: 40%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }.projects .header{
     font-size: 5rem;
     margin: 30px 0;
 }.projects .desc{
     font-size: 1.5rem;
-    /* width: 45%; */
 }.projects .title{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
@@ -70,8 +73,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    background-color: gray;
-    border: 1px solid blue;
+    /* background-color: gray; */
+    /* border: 1px solid blue; */
 }.projects .toprow{
     width: 100%;
     margin: auto;
@@ -130,13 +133,11 @@
 }.projects .card:hover .image{
     filter: brightness(50%) blur(5px);
 }
-/* ACTUAL card background image */
 .projects .card .image img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* opacity: .4; */
     width: 800px;
     transition: 0.5s;
 }.projects .card:hover .image img{
@@ -156,7 +157,7 @@
 }.projects .card:hover .title{
     opacity: 1;
 }
-.projects h2{
+.projects .card h2{
     margin: 0px;
     padding: 0px;
     font-size: 6rem;
@@ -201,30 +202,6 @@
     opacity: 1;
 }
 
-/* .projects button{
-    color: white;
-    font-family:inherit;
-    font-size: 1rem;
-    padding: 4px 8px;
-    margin-top: 5px;
-    opacity: 0;
-
-    background: black;
-    border: 3px solid white;
-    box-shadow: 0 0 0 white;
-    transition: all 0.3s;
-  }  .projects button:last-child {
-    margin: 0;
-  }.projects button:hover {
-    box-shadow: 8px 8px 0 black;
-    transform: translate(-8px, -8px);
-  }.projects button:active {
-    box-shadow: 0 0 0 white;
-    transform: translate(0, 0);
-  }.projects dialog::backdrop {
-    background: #ccf8;
-  } */
-
 .projects button{
     position: relative;
     display: inline-block;
@@ -241,6 +218,7 @@
     margin-top: -40px;
 }
   
+
 .svg-wrapper {
     margin-top: 30px;
     position: relative;
@@ -254,10 +232,13 @@
     /* background-color: red; */
 
     box-shadow: 0 0 0 black;
-    transition: .8s all ease;
+    transition: .2s all ease;
   }.svg-wrapper:hover{
     transform: translate(-6px, -6px);
     box-shadow: 6px 6px 0 black;
+  }.svg-wrapper:active{
+    transform: translate(0, 0);
+    box-shadow: 0 0 0 black;
   }
   #shape {
     stroke-width: 3px;
@@ -265,29 +246,10 @@
     stroke: white;
     stroke-dasharray: 90 400;
     stroke-dashoffset: -205;
-    transition: .8s all ease;
+    transition: 1s all ease;
   }.svg-wrapper:hover #shape {
     stroke-dasharray: 50 0;
     stroke-width: 6px;
     stroke-dashoffset: 0;
     stroke: #06D6A0;
   }
-  
-  /* .spot {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }   */
-
-  /* #text {
-    margin-top: -30px;
-    text-align: center;
-  }  #text a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  } */
-  
-  

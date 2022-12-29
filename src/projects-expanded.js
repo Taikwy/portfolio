@@ -24,7 +24,6 @@ for(let i = 0; i < modals.length; i++){
   closeModals[i].addEventListener("click", () => {
     console.log("close");
     modals[i].close();
-    // document.body.style.overflow = '';
   });
 }
 
@@ -36,7 +35,6 @@ for(let i = 0; i < dialogs.length; i++){
     console.log(e.target);
     if (e.target === dialogs[i]) {
       // dialogs[i].close();
-      // document.body.style.overflow = '';
     }
     if (!$(e.target).closest(".modal,open-button").length) {
       console.log(e.target);
