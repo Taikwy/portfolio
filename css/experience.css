@@ -1,137 +1,129 @@
 .experience.container {
-    padding-top: 100px;
+    padding-top: 140px;
     background-color: black;
     color: white;
     /* border: 1px solid hotpink; */
 }
+.experience .header{
+    font-size: 7rem;
+    margin: 40px 0px;
+    text-align: center;
+}
 
-.experience .about.flex{
+.experience .darkwind{
+    position: relative;
     width: 70%;
-    margin: auto;
+    margin: 0px auto;
+    padding-bottom: 100px;
+    text-align: left;
+    overflow: hidden;
+    
+    /* background-color: gray; */
+    /* border: 1px solid blue; */
+}
 
+
+.xpflex{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    
-    /* border: 1px solid darkgoldenrod; */
-}.experience img {
-    border: 1px solid black;
-    width: 55%;
-    height: 50%;
-}.experience .text{
-    text-align: left;
-    width: 40%;
-    /* border: 1px solid blue; */
-}.experience .header{
-    font-size: 5rem;
-    margin: 30px 0;
-}.experience .desc{
-    font-size: 1.5rem;
-}.experience .title{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-}
 
-/* Card */
-.experience .card{
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-    margin: 20px;
-    box-sizing: border-box;
-    width: 750px;
-    height: 500px;
-
-    border: 4px solid transparent;
-    /* background: black; */
-    transition: 0.4s;
-}.experience .card:hover{
-    animation: none;
-    box-shadow: 0px 0px 25px 2px white;
-    border: 5px solid white;
-}
-
-/* background image holder */
-.experience .card .image{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: 0.3s;
-}.experience .card:hover .image{
-    filter: brightness(50%) blur(5px);
+
+    /* background-color: red; */
 }
-.experience .card .image img{
+
+.xpflex .company{
+    position: relative;
+    width: 40%;
+}
+.company h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10rem;
+    line-height: 8.5rem;
+    margin-left: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #3BF6FF;
+    /* background-color: red; */
+}  
+.xpflex hr{
+    width: 0px;
+    margin: 0px;
+    border: 2px solid white;
+    /* padding: 0px 10px; */
+}
+
+
+.experience .darkwind .image{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    transition: 0.5s;
-}.experience .card:hover .image img{
-    width: 1000px;
+    right: 55px;
+    top: 10px;
+    margin: 0px;
+    /* border: 1px solid white; */
+}.experience .darkwind img{
+    width: 120px;
 }
-.experience .card .title{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    opacity: 0;
-    transition: 0.5s;
-    /* background-color: black; */
-}.experience .card:hover .title{
-    opacity: 1;
-}
-.experience .card h2{
+
+
+.xpflex .right{
+    width: 55%;
     margin: 0px;
     padding: 0px;
-    font-size: 6rem;
+    text-align: left;
 
-    color: white;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: red; */
 }
-
-/* holder of text before it pops up */
-.experience .card .content{
-    position: absolute;
-    bottom: 0;
+.right .pos{
     width: 100%;
-    height: 0px;
-    text-align: center;
-    transition: .6s;
-    z-index: 10;
-}.experience .card:hover .content{
-    height: 180px;
+    margin: 0px;
+    position: relative;
+    /* background-color: red; */
+}
+.right hr{
+    width: 100%;
+    /* background-color: red; */
+    margin: 20px auto;
+    border: 1px solid #3BF6FF;
 }
 
-.experience .card .content .desc{
-    opacity: 0;
-    visibility: hidden;
-    
-    transition: 0.4s;
-}.experience .card:hover .content .desc{
-    opacity: 1;
-    visibility: visible;
-}
 
-.experience .card .content .desc span{
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    font-size: 1rem;
+.right .line{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    /* background-color: red; */
+}.right .head{
     display: inline-block;
-    color: white;
+    width: 50%;
+    vertical-align: top;
+    /* background-color: green; */
+}.experience h3{
+    /* display: inline; */
+    margin: 0px;
+    color: #3BF6FF;
+    font-size: 1.2rem;
+    font-family: 'Martian Mono', monospace;
+}
+.right .list{
+    display: inline-block;
+    /* background-color: purple; */
+}
+.right .role{
+    margin-top: 20px;
+}
+.role h3{
+    margin: 10px auto;
+}
+.right .role{
+    width: 100%;
+    position: relative;
+    /* background-color: purple; */
 }
 
-.experience .card:hover .content button{
-    opacity: 1;
-}
 
 .experience button{
     position: relative;
@@ -140,47 +132,38 @@
 
     color: white;
     font-family:inherit;
-    font-size: 1rem;
+    font-size: 1.3rem;
 
     border: none;
     background-color: transparent;
     /* background-color: yellow; */
-    padding: 10px 25px;
-    margin-top: -40px;
+    padding: 10px 50px;
+    margin-top: -48px;
 }
   
-
-.svg-wrapper {
-    margin-top: 30px;
-    position: relative;
-    width: 140px;
-    /*make sure to use same height/width as in the html*/
-    height: 40px;
-    display: inline-block;
-    border-radius: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
-    /* background-color: red; */
-
+.xpflex .darkwindsite{
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.xpflex .svg-wrapper.darkwindsite {
+    width: 320px;
+    height: 50px;
     box-shadow: 0 0 0 black;
-    transition: .2s all ease;
-  }.svg-wrapper:hover{
-    transform: translate(-6px, -6px);
-    box-shadow: 6px 6px 0 black;
-  }.svg-wrapper:active{
-    transform: translate(0, 0);
-    box-shadow: 0 0 0 black;
-  }
-  #shape {
-    stroke-width: 4px;
-    fill: transparent;
-    stroke: white;
-    stroke-dasharray: 90 400;
-    stroke-dashoffset: -205;
-    transition: .75s all ease;
-  }.svg-wrapper:hover #shape {
+    /* right: 45px;
+    top: 20px; */
+}.svg-wrapper.darkwindsite:hover{
+    transform: translate(-50%, 0%) translate(-6px, -6px);
+    box-shadow: 6px 6px 0 gray;
+    /* background-color: #564399; */
+}.xpflex .darkwindsite #shape {
+    stroke-dasharray: 216 440;
+    stroke-dashoffset: -422;
+}.xpflex .svg-wrapper.darkwindsite:hover #shape {
     stroke-dasharray: 50 0;
-    stroke-width: 8px;
+    stroke-width: 10px;
     stroke-dashoffset: 0;
-    stroke: #06D6A0;
-  }
+    stroke: #3BF6FF;
+}

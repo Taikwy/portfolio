@@ -1,12 +1,12 @@
 .projects .modal::backdrop {
-    background: rgb(0 0 0 / 0.4);
+    /* background: rgb(0 0 0 / 0.75); */
 }
 .projects .modal {
     width: 65vw;
     height: 75vh;
     padding: 0px;
 
-    background-color: #2C1F5F;
+    /* background-color: #2E1B4F; */
     color: white;
 }
 .projects .modal hr{
@@ -34,7 +34,18 @@
     /* background-color: red; */
 }  
 
-.projects .modal .about{
+.holder{
+    /* background-color: red; */
+    padding: 0px 20px;
+}.holder hr{
+    display: inline-block;
+    border: 2px solid white;
+    margin: 20px auto;
+    
+}
+
+.projects .modal .info{
+    position: relative;
     width: 35%;
     max-height: 500px;
     /* margin: auto; */
@@ -42,43 +53,48 @@
     text-align: left;
     overflow: hidden;
     
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     /* background-color: gray; */
     /* border: 1px solid blue; */
 }
 
-.project h3{
+.info h3{
     display: inline;
     margin: 0px;
     color: #3BF6FF;
+
     font-size: 1.2rem;
+    font-family: 'Martian Mono', monospace;
 }
 
-.project span{
-    display: inline-block;
-    width: 35%;
-}.modalflex .project{
-    font-size: 1.2rem;
-
-    /* font-family: 'Familjen Grotesk', sans-serif; */
-    /* font-family: 'Hanken Grotesk', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-}
-
-.holder{
+.info .project{
+    margin-bottom: 10px;
+    line-height: 1.5rem;
     /* background-color: red; */
-    padding: 0px 20px;
-}
-.holder hr{
+}.project .head{
     display: inline-block;
-    border: 2px solid white;
-    margin: 20px auto;
-    
-}.modalflex hr{
+    width: 45%;
+    vertical-align: top;
+    /* background-color: green; */
+}.project .list{
+    display: inline-block;
+    /* background-color: purple; */
+}
+
+
+.info hr{
     display: inline-block;
     border: 1px solid #3BF6FF;
-    margin: 15px auto;
-    margin-bottom: 25px;
+    /* margin: 15px auto; */
+    margin: 10px 0;
     padding-left: 50px;
+}
+
+.info .about h3{
+    display: block;
+    margin: 10px auto;
 }
 
 /* ===================================================================== */
@@ -125,14 +141,14 @@
 }
 
 .modal .svg-wrapper.itch {
-    width: 125px;
+    width: 160px;
     /*make sure to use same height/width as in the html*/
     position: absolute;
     right: 45px;
     top: 20px;
 }.modal .project .itch #shape {
     stroke-dasharray: 40 400;
-    stroke-dashoffset: -125;
+    stroke-dashoffset: -165;
 }.modal .project .svg-wrapper.itch:hover #shape {
     stroke-dasharray: 50 0;
     stroke-width: 6px;
@@ -140,20 +156,27 @@
     stroke: #fa5c5c;
 }
 
+.svg-wrapper.git:hover{
+    background-color: #50357F;
+}
+.svg-wrapper.itch:hover{
+    background-color: #50357F;
+}
+
 .modal .svg-wrapper.git {
-    width: 120px;
+    width: 144px;
     /*make sure to use same height/width as in the html*/
     position: absolute;
     right: 45px;
     top: 75px;
 }.modal .project .git #shape {
     stroke-dasharray: 40 400;
-    stroke-dashoffset: -120;
+    stroke-dashoffset: -150;
 }.modal .project .svg-wrapper.git:hover #shape {
     stroke-dasharray: 50 0;
     stroke-width: 6px;
     stroke-dashoffset: 0;
-    stroke: black;
+    stroke: #757575;
 }
 
 .modal .svg-wrapper.site {
@@ -172,26 +195,27 @@
     stroke: black;
 }
 
-.modalflex .about{
-    position: relative;
-}
 .modalflex .closebutton{
     margin: 0;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0%);
+}.closebutton button{
+    /* background-color: blue; */
+    padding: 10px 36px;
 }
+
 .modalflex .svg-wrapper.close {
-    width: 100px;
-    /*make sure to use same height/width as in the html*/
+    width: 130px;
 }.svg-wrapper.close:hover{
     transform: translate(-6px, -6px);
     box-shadow: 6px 6px 0 black;
-    background-color: #564399;
-  }.modalflex #shape {
+    background-color: #50357F;
+    color: red;
+}.modalflex #shape {
     stroke-dasharray: 58 400;
-    stroke-dashoffset: -157;
+    stroke-dashoffset: -210;
 }.modalflex .svg-wrapper:hover #shape {
     stroke: #FF0000;
 }

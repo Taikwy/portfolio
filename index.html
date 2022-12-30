@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="CSS/scroll.css">
     <link rel="stylesheet" href="CSS/experience.css">
     <!-- <link rel="stylesheet" href="CSS/card.css"> -->
+    <link rel="stylesheet" href="CSS/modalglow.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <link rel="stylesheet" href="CSS/projects.css">
     <link rel="stylesheet" href="CSS/projects-expanded.css">
     <link rel="stylesheet" href="CSS/aboutme.css">
@@ -35,6 +37,7 @@
     <script src="src/landing.js" type="module"></script>
     <script src="src/navbar.js" type="module"></script>
     <script src="src/projects-expanded.js" type="module"></script>
+    <script src="src/modal.js" type="module"></script>
   </head>
 
   <body>
@@ -201,14 +204,9 @@
               <div class="desc">
                 <span>Rogue-like Tanks Game</span>
               </div>
-              <!-- <div class="platform">
-                <i class="fa-brands fa-square-js"></i>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-              </div> -->
               <div class="svg-wrapper">
-                <svg height="40" width="140" xmlns="http://www.w3.org/2000/svg">
-                  <rect id="shape" height="40" width="140" />
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
                   <div id="text">
                     <button class="button open-button">See More</button>
                   </div>
@@ -219,16 +217,16 @@
                 <div class="project">
                   <h2>Tanks!</h2>
                   <div class="svg-wrapper itch">
-                    <svg height="40" width="125" xmlns="http://www.w3.org/2000/svg">
-                      <rect id="shape" height="40" width="125" />
+                    <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="160" />
                       <div id="text">
                         <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
                       </div>
                     </svg>
                   </div>
                   <div class="svg-wrapper git">
-                    <svg height="40" width="120" xmlns="http://www.w3.org/2000/svg">
-                      <rect id="shape" height="40" width="120" />
+                    <svg height="45" width="144" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="144" />
                       <div id="text">
                         <a href="https://github.com/" target="_blank" ><button class="button">Github</button></a>
                       </div>
@@ -248,20 +246,33 @@
                   <div class="showcase">
                     <img src="images/face.png" alt="wip">
                   </div>
-                  <div class ="about">
-                    <div class="project"><span><h3>Category: </h3></span>Personal Project</div>
-                    <div class="project"><span><h3>Date: </h3></span>2022</div>
-                    <div class="project"><span><h3>Languages: </h3></span>JavaScript, HTML, CSS</div>
-                    <div class="project"><span><h3>Technologies: </h3></span>Visual Studio Code, Aseprite</div>
-                    <br><hr>
+                  <div class ="info">
                     <div class="project">
-                      <h3>About:</h3><br>
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Personal Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2022</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">JavaScript <br>HTML/CSS</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">Visual Studio Code<br>Aseprite</span>
+                    </div>
+                    <!-- <br> -->
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
                     </div>
                     <div class="closebutton">
                       <div class="svg-wrapper close">
-                        <svg height="40" width="100" xmlns="http://www.w3.org/2000/svg">
-                          <rect id="shape" height="40" width="100" />
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
                           <div id="text">
                             <button class="button close-button">Close</button>
                           </div>
@@ -270,7 +281,6 @@
                     </div>
                   </div>
                 </div>
-                
                 
               </dialog>
             </div>
@@ -287,12 +297,18 @@
               </div>
 
               <button class="button open-button">See More</button>
-              <dialog class="modal" id="modal">
-                <h2>Stationary</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
-                <button class="button close-button">close modal</button>
-              </dialog>
+              <div class="">
+                <dialog class="modal" id="modal">
+                  <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="45" width="160" />
+                  </svg>
+                  <div ></div>
+                  <h2>Stationary</h2>
+                  <button class="button close-button">close modal</button>
+                </dialog>
+              </div>
+              
+              
             </div>
             <div class="image">
               <img src="images/face.png" alt="wip">
@@ -326,95 +342,71 @@
     </div>
 
     <div class="container experience">
-      <div class="about flex">
-        <div class="text">
-          <div class="header">Experience</div>
-          <div class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iste quos consectetur aliquid iusto inventore unde ad ipsum dolore ab?
-          </div>
-        </div>
-        <div class="card darkwind">
-          <div class="image">
-            <img src="images/darkwind-white.webp" alt="">
-          </div>
-          <div class="title">
+      <div class="header">Experience</div>
+
+      <div class="darkwind">
+        <div class="xpflex">
+         
+          <div class="company">
             <h2>Darkwind Media</h2>
-          </div>
-          <div class="content">
-            <div class="desc">
-              <span>Junior Game Developer</span>
-            </div>
-            
-            <div class="svg-wrapper">
-              <svg height="40" width="140" xmlns="http://www.w3.org/2000/svg">
-                <rect id="shape" height="40" width="140" />
+            <div class="svg-wrapper darkwindsite">
+              <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="50" width="320" />
                 <div id="text">
-                  <button class="button open-button">See More</button>
+                  <a href="https://itch.io/" target="_blank" ><button class="button">Company Website</button></a>
                 </div>
               </svg>
             </div>
-            <dialog class="modal" id="modal">
-              <div class="project">
-                <h2>Tanks!</h2>
-                <div class="svg-wrapper itch">
-                  <svg height="40" width="125" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="125" />
-                    <div id="text">
-                      <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
-                    </div>
-                  </svg>
-                </div>
-                <div class="svg-wrapper git">
-                  <svg height="40" width="120" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="120" />
-                    <div id="text">
-                      <a href="https://github.com/" target="_blank" ><button class="button">Github</button></a>
-                    </div>
-                  </svg>
-                </div>
-                <!-- <div class="svg-wrapper site">
-                  <svg height="40" width="130" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="40" width="130" />
-                    <div id="text">
-                      <a href="https://taikwy.github.io/tanks/" target="_blank" ><button class="button">Website</button></a>
-                    </div>
-                  </svg>
-                </div> -->
+          </div>
+          
+          <!-- <div class="image">
+            <img src="images/darkwind-white.webp" alt="">
+          </div> -->
+          <hr>
+          <div class="right">
+
+            <div class ="pos">
+              <!-- <div class="holder"><hr></div> -->
+              <div class="line">
+                <span class="head"><h3>Position: </h3></span>
+                <span class="list">Junior Game Developer</span>
               </div>
-              <div class="holder"><hr></div>
-              <div class="modalflex">
-                <div class="showcase">
-                  <img src="images/face.png" alt="wip">
-                </div>
-                <div class ="about">
-                  <div class="project"><span><h3>Category: </h3></span>Personal Project</div>
-                  <div class="project"><span><h3>Date: </h3></span>2022</div>
-                  <div class="project"><span><h3>Languages: </h3></span>JavaScript, HTML, CSS</div>
-                  <div class="project"><span><h3>Technologies: </h3></span>Visual Studio Code, Aseprite</div>
-                  <br><hr>
-                  <div class="project">
-                    <h3>About:</h3><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
-                  </div>
-                  <div class="closebutton">
-                    <div class="svg-wrapper close">
-                      <svg height="40" width="100" xmlns="http://www.w3.org/2000/svg">
-                        <rect id="shape" height="40" width="100" />
-                        <div id="text">
-                          <button class="button close-button">Close</button>
-                        </div>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+              <div class="line">
+                <span class="head"><h3>Location: </h3></span>
+                <span class="list">Rochester, New York</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Date: </h3></span>
+                <span class="list">2022</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Languages: </h3></span>
+                <span class="list">C#</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Technologies: </h3></span>
+                <span class="list">Visual Studio<br>Google Play API<br>Android Studio</span>
               </div>
               
-              
-            </dialog>
+            </div>
+            <hr>
+            <div class="role">
+              <h3>Role:<br></h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum voluptatibus quo temporibus! Ad accusantium debitis iusto ab doloremque neque natus qui aut recusandae adipisci eveniet, dignissimos blanditiis quaerat at dolores voluptas esse ut earum dolor eaque, aliquam repudiandae sunt!
+            </div>
+
+            
           </div>
           
         </div>
-        <!-- <img src="images/SSHornet.png" alt="wip"> -->
+      </div>
+      
+
+      
+      
+
+      
+      
       </div>
 
       
@@ -443,7 +435,42 @@
       </div>
     </div> -->
 
+    <div class="">
+      <div id="modal-container">
+        <div class="modal-background">
+          <div class="modal">
+            <h2>I'm a Modal</h2>
+            <p>Hear me roar.</p>
+            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                      <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Modal Animations</h1>
+        <div class="buttons">
+          <div id="one" class="button">Unfolding</div>
+          <div id="six" class="button">Sketch</div>
+        </div>
+      </div>
+      
+      <!-- <button class="button open-button">See More</button> -->
+      <div class="magic">
+        Magic Card
+      </div>
+      
+      <a href="https://mythrillfiction.com/" target="_blank">Mythrill</a>
+      <!-- <dialog class="modal magic" id="modal">
+        <h2>Stationary</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
+        <button class="button close-button">close modal</button>
+      </dialog> -->
+    </div>
+
     <footer class="footer">
+      
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="text">
         <h1>TW 2022</h1>
