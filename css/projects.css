@@ -109,7 +109,7 @@
     /* height: 220px; */
     z-index: 1;
     transition: 0.3s;
-    background-color: red;
+    /* background-color: red; */
 }.projects .card:hover .image{
     filter: brightness(45%) blur(5px);
 }
@@ -134,6 +134,10 @@
     z-index: 10;
     opacity: 0;
     transition: 0.5s;
+    
+    text-align: center;
+    line-height: 5rem;
+    /* background-color: red; */
     /* background-color: black; */
 }.projects .card:hover .title{
     opacity: 1;
@@ -156,8 +160,15 @@
     text-align: center;
     transition: .6s;
     z-index: 10;
-}.projects .card:hover .content{
+}
+/* .projects .card:hover .content{
     height: 175px;
+} */
+.toprow .card:hover .content{
+    height: 175px;
+}
+.botrow .card:hover .content{
+    height: 135px;
 }
 
 .projects .card .content .desc{

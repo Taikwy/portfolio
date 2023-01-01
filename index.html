@@ -18,6 +18,7 @@
 
 
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/parallax.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/landing.css">
     <link rel="stylesheet" href="CSS/scroll.css">
@@ -34,6 +35,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
     <script src="src/index.js" type="module"></script>
+    <script src="src/parallax.js" type="module"></script>
     <script src="src/landing.js" type="module"></script>
     <script src="src/navbar.js" type="module"></script>
     <script src="src/projects-expanded.js" type="module"></script>
@@ -42,6 +44,23 @@
 
   <body>
 
+    <div class="imagecontainer">
+      <div class="imgcontainer a"><img src="images/a.png" class="object" zLayer="1" xSpeed="1" ySpeed="6" alt=""></div>
+      <div class="imgcontainer b"><img src="images/b.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+      <div class="imgcontainer c"><img src="images/c.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
+      <div class="imgcontainer d"><img src="images/d.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
+      <div class="imgcontainer e"><img src="images/e.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+      <div class="imgcontainer f"><img src="images/f.png" class="object" zLayer="1" xSpeed="6" ySpeed="1" alt=""></div>
+      <!-- <img src="images/f.png" class="object" data-value="-2" alt="">
+      <img src="images/f.png" class="object" data-value="6" alt="">
+      <img src="images/f.png" class="object" data-value="4" alt="">
+      <img src="images/f.png" class="object" data-value="-6" alt="">
+      <img src="images/f.png" class="object" data-value="8" alt="">
+      <img src="images/f.png" class="object" data-value="-4" alt="">
+      <img src="images/f.png" class="object" data-value="5" alt="">
+      <img src="images/f.png" class="object" data-value="-9" alt="">
+      <img src="images/f.png" class="object" data-value="-5" alt=""> -->
+    </div>
     <div class="navbar container" id="nav">
       <ul>
         <!-- <li><a href="#" id = "home" class="active">Home</a></li>
@@ -106,12 +125,16 @@
         <div class="image">
           <img src="images/illusion.png" alt="">
         </div>
-        <!-- <div class='pixeleyes'>
-          <div class='pixeleye left'></div>
-          <div class='pixeleye topright'></div>
-          <div class='pixeleye botright'></div>
-          <div class='pixeleye big'></div>
-        </div> -->
+
+        <div class="imagecontainer">
+          <div class="imgcontainer a"><img src="images/a.png" class="object" zLayer="1" xSpeed="1" ySpeed="6" alt=""></div>
+          <div class="imgcontainer b"><img src="images/b.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer c"><img src="images/c.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer d"><img src="images/d.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer e"><img src="images/e.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer f"><img src="images/f.png" class="object" zLayer="1" xSpeed="6" ySpeed="1" alt=""></div>
+        </div>
+
         <div class="text">
           <h1>TYLER WANG</h1>
           <span>
@@ -288,52 +311,319 @@
           </div>
 
           <div class="card stationary">
+            <div class="image">
+              <img src="images/tanks.png" alt="wip">
+            </div>
+
             <div class="title">
               <h2>Stationary</h2>
             </div>
             <div class="content">
               <div class="desc">
-                <span>Mystery horror game</span>
+                <span>Mystery Narrative Game</span>
+              </div>
+              <div class="svg-wrapper">
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
+                  <div id="text">
+                    <button class="button open-button">See More</button>
+                  </div>
+                </svg>
               </div>
 
-              <button class="button open-button">See More</button>
-              <div class="">
-                <dialog class="modal" id="modal">
-                  <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
-                    <rect id="shape" height="45" width="160" />
-                  </svg>
-                  <div ></div>
+              <dialog class="modal" id="modal">
+                <div class="project">
                   <h2>Stationary</h2>
-                  <button class="button close-button">close modal</button>
-                </dialog>
-              </div>
-              
-              
+                  <div class="svg-wrapper itch">
+                    <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="160" />
+                      <div id="text">
+                        <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
+                      </div>
+                    </svg>
+                  </div>
+                </div>
+                <div class="holder"><hr></div>
+                <div class="modalflex">
+                  <div class="showcase">
+                    <img src="images/face.png" alt="wip">
+                  </div>
+                  <div class ="info">
+                    <div class="project">
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Academic Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2022</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">C#</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">Unity<br>Visual Studio<br>Aseprite</span>
+                    </div>
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
+                    </div>
+                    <div class="closebutton">
+                      <div class="svg-wrapper close">
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
+                          <div id="text">
+                            <button class="button close-button">Close</button>
+                          </div>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </dialog>
             </div>
-            <div class="image">
-              <img src="images/face.png" alt="wip">
-            </div>
+            
           </div>
 
         </div>
         <div class="botrow thincolumn">
 
+
           <div class="card talismans">
             <div class="image">
-              <img src="images/face.png" alt="wip">
+              <img src="images/tanks.png" alt="wip">
             </div>
+
+            <div class="title">
+              <h2>Shifting Talismans</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Puzzle Game</span>
+              </div>
+              <div class="svg-wrapper">
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
+                  <div id="text">
+                    <button class="button open-button">See More</button>
+                  </div>
+                </svg>
+              </div>
+
+              <dialog class="modal" id="modal">
+                <div class="project">
+                  <h2>Shifting Talismans</h2>
+                  <div class="svg-wrapper itch">
+                    <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="160" />
+                      <div id="text">
+                        <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
+                      </div>
+                    </svg>
+                  </div>
+                </div>
+                <div class="holder"><hr></div>
+                <div class="modalflex">
+                  <div class="showcase">
+                    <img src="images/face.png" alt="wip">
+                  </div>
+                  <div class ="info">
+                    <div class="project">
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Academic Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2022</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">C#</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">Unity<br>Visual Studio</span>
+                    </div>
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
+                    </div>
+                    <div class="closebutton">
+                      <div class="svg-wrapper close">
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
+                          <div id="text">
+                            <button class="button close-button">Close</button>
+                          </div>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </dialog>
+            </div>
+            
           </div>
 
-          <div class="card eatndefeat">
+          <div class="card defeat">
             <div class="image">
-              <img src="images/face.png" alt="wip">
+              <img src="images/tanks.png" alt="wip">
             </div>
+
+            <div class="title">
+              <h2>Eat n' Defeat</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Shmup Game</span>
+              </div>
+              <div class="svg-wrapper">
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
+                  <div id="text">
+                    <button class="button open-button">See More</button>
+                  </div>
+                </svg>
+              </div>
+
+              <dialog class="modal" id="modal">
+                <div class="project">
+                  <h2>Eat n' Defeat</h2>
+                  <div class="svg-wrapper itch">
+                    <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="160" />
+                      <div id="text">
+                        <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
+                      </div>
+                    </svg>
+                  </div>
+                </div>
+                <div class="holder"><hr></div>
+                <div class="modalflex">
+                  <div class="showcase">
+                    <img src="images/face.png" alt="wip">
+                  </div>
+                  <div class ="info">
+                    <div class="project">
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Academic Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2020</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">C#</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">MonoGame<br>Visual Studio</span>
+                    </div>
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
+                    </div>
+                    <div class="closebutton">
+                      <div class="svg-wrapper close">
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
+                          <div id="text">
+                            <button class="button close-button">Close</button>
+                          </div>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </dialog>
+            </div>
+            
           </div>
 
           <div class="card wip">
             <div class="image">
-              <img src="images/face.png" alt="wip">
+              <img src="images/tanks.png" alt="wip">
             </div>
+
+            <div class="title">
+              <h2>WIP...</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Roguelike Shmup Game</span>
+              </div>
+              <div class="svg-wrapper">
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
+                  <div id="text">
+                    <button class="button open-button">See More</button>
+                  </div>
+                </svg>
+              </div>
+
+              <dialog class="modal" id="modal">
+                <div class="project">
+                  <h2>WIP...</h2>
+                  <div class="svg-wrapper itch">
+                    <svg height="45" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="45" width="160" />
+                      <div id="text">
+                        <a href="https://itch.io/" target="_blank" ><button class="button">Itch.io</button></a>
+                      </div>
+                    </svg>
+                  </div>
+                </div>
+                <div class="holder"><hr></div>
+                <div class="modalflex">
+                  <div class="showcase">
+                    <img src="images/face.png" alt="wip">
+                  </div>
+                  <div class ="info">
+                    <div class="project">
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Personal Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2022-Present</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">C#</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">Unity<br>Visual Studio<br>Aseprite</span>
+                    </div>
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed voluptatum dicta porro maxime accusantium fuga, optio praesentium laborum atque magni quos rerum illum, cum inventore quis modi perferendis at?
+                    </div>
+                    <div class="closebutton">
+                      <div class="svg-wrapper close">
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
+                          <div id="text">
+                            <button class="button close-button">Close</button>
+                          </div>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </dialog>
+            </div>
+            
           </div>
 
         </div>
@@ -434,40 +724,6 @@
         <span>
       </div>
     </div> -->
-
-    <div class="">
-      <div id="modal-container">
-        <div class="modal-background">
-          <div class="modal">
-            <h2>I'm a Modal</h2>
-            <p>Hear me roar.</p>
-            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-                      <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-                    </svg>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-        <h1>Modal Animations</h1>
-        <div class="buttons">
-          <div id="one" class="button">Unfolding</div>
-          <div id="six" class="button">Sketch</div>
-        </div>
-      </div>
-      
-      <!-- <button class="button open-button">See More</button> -->
-      <div class="magic">
-        Magic Card
-      </div>
-      
-      <a href="https://mythrillfiction.com/" target="_blank">Mythrill</a>
-      <!-- <dialog class="modal magic" id="modal">
-        <h2>Stationary</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
-        <button class="button close-button">close modal</button>
-      </dialog> -->
-    </div>
 
     <footer class="footer">
       

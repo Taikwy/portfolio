@@ -6,7 +6,8 @@
     height: 75vh;
     padding: 0px;
 
-    /* background-color: #2E1B4F; */
+    background-color: #2E1B4F;
+    /* background: rgb(46 27 79 / 0.8); */
     color: white;
 }
 .projects .modal hr{
@@ -145,7 +146,7 @@
     /*make sure to use same height/width as in the html*/
     position: absolute;
     right: 45px;
-    top: 20px;
+    top: 40px;
 }.modal .project .itch #shape {
     stroke-dasharray: 40 400;
     stroke-dashoffset: -165;
@@ -156,19 +157,13 @@
     stroke: #fa5c5c;
 }
 
-.svg-wrapper.git:hover{
-    background-color: #50357F;
-}
-.svg-wrapper.itch:hover{
-    background-color: #50357F;
-}
 
 .modal .svg-wrapper.git {
     width: 144px;
     /*make sure to use same height/width as in the html*/
     position: absolute;
     right: 45px;
-    top: 75px;
+    top: 100px;
 }.modal .project .git #shape {
     stroke-dasharray: 40 400;
     stroke-dashoffset: -150;
@@ -193,6 +188,12 @@
     stroke-width: 6px;
     stroke-dashoffset: 0;
     stroke: black;
+}
+
+.svg-wrapper.git:hover{
+    background-color: #50357F;
+}.svg-wrapper.itch:hover{
+    background-color: #50357F;
 }
 
 .modalflex .closebutton{
