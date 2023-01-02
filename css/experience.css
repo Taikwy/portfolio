@@ -16,7 +16,8 @@
     margin: 0px auto;
     padding-bottom: 100px;
     text-align: left;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow:visible;
     
     /* background-color: gray; */
     /* border: 1px solid blue; */
@@ -30,7 +31,6 @@
     justify-content: space-between;
 
     width: 100%;
-
     /* background-color: red; */
 }
 
@@ -46,26 +46,41 @@
     margin-top: 0px;
     margin-bottom: 0px;
     color: #3BF6FF;
+
     /* background-color: red; */
+    animation: xpGlow2 1s alternate infinite linear;
 }  
+
+@keyframes xpGlow2 {
+    0% {
+        color: #FF3200;
+        border-color: #FF3200;
+        filter: drop-shadow(0 0 0px #FF6C00);
+    }
+    100% {
+        color: #FF8000;
+        border-color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+}
+
+@keyframes xpGlow3 {
+    0% {
+        color: #FF3200;
+        filter: drop-shadow(0 0 0px #FF6C00);
+    }
+    100% {
+        color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+}
+
 .xpflex hr{
     width: 0px;
     margin: 0px;
     border: 2px solid white;
     /* padding: 0px 10px; */
 }
-
-
-.experience .darkwind .image{
-    position: absolute;
-    right: 55px;
-    top: 10px;
-    margin: 0px;
-    /* border: 1px solid white; */
-}.experience .darkwind img{
-    width: 120px;
-}
-
 
 .xpflex .right{
     width: 55%;
@@ -88,6 +103,7 @@
     /* background-color: red; */
     margin: 20px auto;
     border: 1px solid #3BF6FF;
+    animation: xpGlow2 1s alternate infinite linear;
 }
 
 
@@ -107,6 +123,8 @@
     color: #3BF6FF;
     font-size: 1.2rem;
     font-family: 'Martian Mono', monospace;
+    
+    animation: xpGlow3 1s alternate infinite linear;
 }
 .right .list{
     display: inline-block;
@@ -121,7 +139,11 @@
 .right .role{
     width: 100%;
     position: relative;
+    line-height: 2rem;
     /* background-color: purple; */
+}
+.right .role br{
+    line-height: 1rem;
 }
 
 
@@ -156,7 +178,7 @@
     top: 20px; */
 }.svg-wrapper.darkwindsite:hover{
     transform: translate(-50%, 0%) translate(-6px, -6px);
-    box-shadow: 6px 6px 0 gray;
+    box-shadow: 6px 6px 0 #99250E;
     /* background-color: #564399; */
 }.xpflex .darkwindsite #shape {
     stroke-dasharray: 216 440;
@@ -165,5 +187,5 @@
     stroke-dasharray: 50 0;
     stroke-width: 10px;
     stroke-dashoffset: 0;
-    stroke: #3BF6FF;
+    stroke: #FF8000;
 }

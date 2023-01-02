@@ -36,7 +36,7 @@ function navScrollAppear(){
     navBar.style.position = 'fixed';
     navBar.style.backdropFilter = 'blur(5px)';
 
-    navBar.style.backgroundColor = "rgba(0,0,0,.6)";
+    navBar.style.backgroundColor = "rgb(0 0 0 / 0.7)";
 }
 function navScrollDissapear(){
     navBar.style.top = "-100";
