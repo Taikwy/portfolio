@@ -1,4 +1,5 @@
 .aboutme.container{
+    position: relative;
     font-size: 3rem;
     text-align: center;
     background-color: black;
@@ -22,8 +23,8 @@
 }
 
 .aboutme img {
-    border: 1px solid black;
-    width: 55%;
+    /* border: 1px solid black;
+    width: 55%; */
 }
 
 .aboutme .text{
@@ -38,4 +39,63 @@
 }
 .aboutme .desc{
     font-size: 1.5rem;
+}
+
+
+
+
+ 
+.hobbies.imagecontainer, .gaming.imagecontainer{
+    /* position: absolute; */
+    position: relative;
+    /* height: 100%; */
+    width: 55%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+    background-color: rgba(0, 0, 255 , .2);
+    /* opacity: .2; */
+}
+  
+.hobbies .imgcontainer, .gaming .imgcontainer{
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+
+
+    box-sizing: border-box;
+    /* opacity: .2; */
+    /* background-color: blue;
+    border: 2px solid white; */
+}
+.hobbies .imgcontainer img, .gaming .imgcontainer img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    object-fit: contain;
+
+    opacity: 1;
+    /* background-color: blue; */
+    /* border: 2px solid white; */
+}
+  
+.hobbies .imgcontainer.t{
+    position: absolute; 
+}
+.hobbies .imgcontainer.m{
+    position: absolute; 
+}
+.hobbies .imgcontainer.b{
+    position: absolute; 
+}
+
+
+.gaming .imgcontainer.g{
+    position: absolute; 
 }

@@ -17,6 +17,7 @@
 
 
 
+    <!-- Landing -->
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/parallax.css">
     <link rel="stylesheet" href="CSS/navbar.css">
@@ -26,8 +27,13 @@
     <!-- <link rel="stylesheet" href="CSS/card.css"> -->
     <link rel="stylesheet" href="CSS/modalglow.css">
     <link rel="stylesheet" href="CSS/modal.css">
+    <!-- Projects -->
+    <link rel="stylesheet" href="CSS/setup.css">
     <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
     <link rel="stylesheet" href="CSS/projects-expanded.css">
+    
+    <!-- About Me -->
     <link rel="stylesheet" href="CSS/aboutme.css">
     <link rel="stylesheet" href="CSS/footer.css">
 
@@ -44,23 +50,6 @@
 
   <body>
 
-    <div class="imagecontainer">
-      <div class="imgcontainer a"><img src="images/a.png" class="object" zLayer="1" xSpeed="1" ySpeed="6" alt=""></div>
-      <div class="imgcontainer b"><img src="images/b.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
-      <div class="imgcontainer c"><img src="images/c.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
-      <div class="imgcontainer d"><img src="images/d.png" class="object" zLayer="4" xSpeed="1" ySpeed="1" alt=""></div>
-      <div class="imgcontainer e"><img src="images/e.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
-      <div class="imgcontainer f"><img src="images/f.png" class="object" zLayer="1" xSpeed="6" ySpeed="1" alt=""></div>
-      <!-- <img src="images/f.png" class="object" data-value="-2" alt="">
-      <img src="images/f.png" class="object" data-value="6" alt="">
-      <img src="images/f.png" class="object" data-value="4" alt="">
-      <img src="images/f.png" class="object" data-value="-6" alt="">
-      <img src="images/f.png" class="object" data-value="8" alt="">
-      <img src="images/f.png" class="object" data-value="-4" alt="">
-      <img src="images/f.png" class="object" data-value="5" alt="">
-      <img src="images/f.png" class="object" data-value="-9" alt="">
-      <img src="images/f.png" class="object" data-value="-5" alt=""> -->
-    </div>
     <div class="navbar container" id="nav">
       <ul>
         <!-- <li><a href="#" id = "home" class="active">Home</a></li>
@@ -208,7 +197,12 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident excepturi cum culpa sed nesciunt voluptatibus ea reprehenderit iste officiis vitae quis, corporis maxime possimus, dolorem non ad eos consectetur praesentium. 
           </div>
         </div>
-        <img src="images/SSHornet.png" alt="wip">
+        <div class="imagecontainer setup">
+          <div class="imgcontainer c"><img src="images/chair.png" class="object" zLayer="1.5" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer d2"><img src="images/desk2.png" class="object" zLayer="1.1" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer d1"><img src="images/desk1.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+        </div>
+        <!-- <img src="images/SSHornet.png" alt="wip"> -->
       </div>
 
       <div class="items flexcolumn flexrow">
@@ -267,6 +261,59 @@
                 <div class="holder"><hr></div>
                 <div class="modalflex">
                   <div class="showcase">
+                    <div>
+                      <div class="carousel">
+                        <ul class="slides">
+                          <input type="radio" name="radio-buttons" id="img-1" checked />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="radio-buttons" id="img-2" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="radio-buttons" id="img-3" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                     <img src="images/face.png" alt="wip">
                   </div>
                   <div class ="info">
@@ -708,8 +755,16 @@
         <div class="life text">
           You won't be able to see the above text if your browser does not support the text-stroke property, because it has a white font color. In order to make the text visible in all these browsers, give it any text color other than the background color so that it becomes visible in all the browsers which do not support this property and use the -webkit-text-fill-color property to override the text color in all WebKit-based browsers.
         </div>
-        <img src="images/SSHornet.png" alt="wip">
-        <img src="images/SSHornet.png" alt="wip">
+        <div class="imagecontainer hobbies">
+          <div class="imgcontainer t"><img src="images/top.png" class="object" zLayer="3" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer m"><img src="images/mid.png" class="object" zLayer="2" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer b"><img src="images/back.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+        </div>
+        <div class="imagecontainer gaming">
+          <div class="imgcontainer g"><img src="images/gaming.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+        </div>
+        <!-- <img src="images/SSHornet.png" alt="wip">
+        <img src="images/SSHornet.png" alt="wip"> -->
         <div class="interests text">
           You won't be able to see the above text if your browser does not support the text-stroke property, because it has a white font color. In order to make the text visible in all these browsers, give it any text color other than the background color so that it becomes visible in all the browsers which do not support this property and use the -webkit-text-fill-color property to override the text color in all WebKit-based browsers.
         </div>

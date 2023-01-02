@@ -5,6 +5,7 @@
 }
 
 .projects .about.flex{
+    position: relative;
     width: 70%;
     max-width: 70%;
     margin: auto;
@@ -17,9 +18,9 @@
     
     /* border: 1px solid darkgoldenrod; */
 }.projects img {
-    border: 1px solid black;
+    /* border: 1px solid black;
     width: 55%;
-    margin-right: 25px;
+    margin-right: 25px; */
 }.projects .text{
     text-align: left;
     width: 40%;
