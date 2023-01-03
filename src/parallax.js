@@ -3,6 +3,8 @@ document.addEventListener("mousemove", setupParallax);
 document.addEventListener("mousemove", hobbyParallax);
 document.addEventListener("mousemove", gamingParallax);
 
+document.addEventListener("mousemove", footerParallax);
+
 function parallax(e){
     document.querySelectorAll(".object").forEach(function(move){
         var moving_value = move.getAttribute("data-value");
@@ -84,6 +86,21 @@ function hobbyParallax(e){
 }
 function gamingParallax(e){
     document.querySelectorAll(".gaming .object").forEach(function(move){
+        var xSpeed = move.getAttribute("xSpeed");
+        var ySpeed = move.getAttribute("ySpeed");
+        var zLayer = move.getAttribute("zLayer");
+
+        var xToCenter = e.pageX - window.innerWidth/2;
+        var yToCenter = e.pageY - window.innerHeight/2;
+        
+        var x = (xToCenter * xSpeed * zLayer)/100;
+        var y = (yToCenter * ySpeed * zLayer)/100;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px) ";
+    });
+}
+
+function footerParallax(e){
+    document.querySelectorAll(".footer .object").forEach(function(move){
         var xSpeed = move.getAttribute("xSpeed");
         var ySpeed = move.getAttribute("ySpeed");
         var zLayer = move.getAttribute("zLayer");

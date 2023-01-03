@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>Taikwy</title>
+    <link rel="icon" type="image/x-icon" href="/images/face-bright.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,13 +52,14 @@
   <body>
 
     <div class="navbar container" id="nav">
+      <!-- <a href="#" class="face"><img src="images/face-bright.png" alt=""></a> -->
       <ul>
         <!-- <li><a href="#" id = "home" class="active">Home</a></li>
         <li><a href="#" id = "projects">Projects</a></li>
         <li><a href="#" id = "about">About Me</a></li>
         <li><a href="#" id = "contact">Contact</a></li> -->
         <li>
-          <a href="#" class="link">
+          <a href="#landing" class="link">
             <span class="mask">
               <div class="link-container">
                 <span class="link-text1 text">Home</span>
@@ -67,7 +69,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="link">
+          <a href="#projects" class="link">
             <span class="mask">
               <div class="link-container">
                 <span class="link-text1 text">Projects</span>
@@ -77,7 +79,17 @@
           </a>
         </li>
         <li>
-          <a href="#" class="link">
+          <a href="#experience" class="link">
+            <span class="mask">
+              <div class="link-container">
+                <span class="link-text1 text">Experience</span>
+                <span class="link-text2 text">Experience</span>
+              </div>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#aboutme" class="link">
             <span class="mask">
               <div class="link-container">
                 <span class="link-text1 text">About Me</span>
@@ -86,16 +98,7 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="#" class="link">
-            <span class="mask">
-              <div class="link-container">
-                <span class="link-text1 text">Contact</span>
-                <span class="link-text2 text">Contact</span>
-              </div>
-            </span>
-          </a>
-        </li>
+        
         <!-- <li>
           <a href="#" class="link">
             <span class="mask">
@@ -109,7 +112,7 @@
       </ul>
     </div>
 
-    <div class="container landing">
+    <div class="container landing" id="landing">
       <div class="flex">
         <div class="image">
           <img src="images/illusion.png" alt="">
@@ -189,12 +192,12 @@
     
     
     
-    <div class="container projects">
+    <div class="container projects" id="projects">
       <div class="about flex">
         <div class="text">
           <div class="header">Projects</div>
           <div class="desc">
-            Here you can find a couple of the featured projects I've worked on in the past. I spend most of my time programming and developing my own games, though I occasionally work with web development as well. If time allows it, I also enjoy creating my own game assets.
+            Here you can find a some of the featured projects I've worked on in the past. I spend most of my time programming and developing my own games, though I occasionally work with web development as well. If time allows it, I also enjoy creating my own game assets.
           </div>
         </div>
         <div class="imagecontainer setup">
@@ -654,7 +657,7 @@
       </div>
     </div>
 
-    <div class="container experience">
+    <div class="container experience" id="experience">
       <div class="header">Experience</div>
 
       <div class="darkwind">
@@ -716,12 +719,10 @@
         </div>
       </div>
       
-      </div>
-
-      
+      </div>     
     </div>
     
-    <div class="container aboutme">
+    <div class="container aboutme" id="aboutme">
       <div class="header">About Me</div>
       <div class="desc flex">
         <div class="life text">
@@ -745,11 +746,17 @@
 
     <footer class="footer">
       
-      <div class="image"><img src="images/infection.png" alt=""></div>
-
-      <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+      <!-- <div class="image"><img src="images/footer/infection.png" alt=""></div> -->
+      <div class="imagecontainer">
+        <div class="imgcontainer s1"><img src="images/footer/splat1.png" class="object" zLayer="2" xSpeed="1" ySpeed="1" alt=""></div>
+        <div class="imgcontainer s2"><img src="images/footer/splat2.png" class="object" zLayer="1.75" xSpeed="1" ySpeed="1" alt=""></div>
+        <div class="imgcontainer s3"><img src="images/footer/splat3.png" class="object" zLayer="1.5" xSpeed="1" ySpeed="1" alt=""></div>
+        <div class="imgcontainer f2"><img src="images/footer/fog2.png" class="object" zLayer="1.25" xSpeed="1" ySpeed="1" alt=""></div>
+        <div class="imgcontainer f1"><img src="images/footer/fog1.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+        <div class="imgcontainer f3"><img src="images/footer/fog3.png" class="object" zLayer=".25" xSpeed="1" ySpeed="1" alt=""></div>
+      </div>
       <div class="flex">
-        <h1>Tyler Wang 2022</h1>
+        <h1>Tyler Wang 2023</h1>
         <div class="links">
           <a href="https://github.com/Taikwy" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 16 16">
