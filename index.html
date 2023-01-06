@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="CSS/setup.css">
     <link rel="stylesheet" href="CSS/projects.css">
     <link rel="stylesheet" href="CSS/carousel.css">
+    <!-- <link rel="stylesheet" href="CSS/tankscarousel.css"> -->
+    <!-- <link rel="stylesheet" href="CSS/stationarycarousel.css"> -->
     <link rel="stylesheet" href="CSS/projects-expanded.css">
     
     <!-- About Me -->
@@ -201,9 +203,9 @@
           </div>
         </div>
         <div class="imagecontainer setup">
-          <div class="imgcontainer c"><img src="images/chair.png" class="object" zLayer="1.5" xSpeed="1" ySpeed="1" alt=""></div>
-          <div class="imgcontainer d2"><img src="images/desk2.png" class="object" zLayer="1.1" xSpeed="1" ySpeed="1" alt=""></div>
-          <div class="imgcontainer d1"><img src="images/desk1.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer d1"><img src="images/parallax/setupsmall.png" class="object" zLayer="1" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer d2"><img src="images/parallax/setupbig.png" class="object" zLayer="1.25" xSpeed="1" ySpeed="1" alt=""></div>
+          <div class="imgcontainer c"><img src="images/parallax/setupme.png" class="object" zLayer="1.6" xSpeed="1" ySpeed="1" alt=""></div>
         </div>
         <!-- <img src="images/SSHornet.png" alt="wip"> -->
       </div>
@@ -214,7 +216,7 @@
 
           <div class="card tanks">
             <div class="image">
-              <img src="images/tanks.png" alt="wip">
+              <img src="images/projects/tankscover.png" alt="wip">
             </div>
 
             <div class="title">
@@ -248,13 +250,13 @@
                 <div class="holder"><hr></div>
                 <div class="modalflex">
                   <div class="showcase">
-                    <div>
+                    <div id="tan-carousel">
                       <div class="carousel">
                         <ul class="slides">
-                          <input type="radio" name="radio-buttons" id="img-1" checked />
+                          <input type="radio" name="tan-radio-buttons" id="img-1" checked />
                           <li class="slide-container">
                             <div class="slide-image">
-                              <img src="images/tanks1.png">
+                              <img src="images/projects/tanks1.png">
                             </div>
                             <div class="carousel-controls">
                               <label for="img-3" class="prev-slide">
@@ -265,10 +267,10 @@
                               </label>
                             </div>
                           </li>
-                          <input type="radio" name="radio-buttons" id="img-2" />
+                          <input type="radio" name="tan-radio-buttons" id="img-2" />
                           <li class="slide-container">
                             <div class="slide-image">
-                              <img src="images/tanks2.png">
+                              <img src="images/projects/tanks2.png">
                             </div>
                             <div class="carousel-controls">
                               <label for="img-1" class="prev-slide">
@@ -279,10 +281,10 @@
                               </label>
                             </div>
                           </li>
-                          <input type="radio" name="radio-buttons" id="img-3" />
+                          <input type="radio" name="tan-radio-buttons" id="img-3" />
                           <li class="slide-container">
                             <div class="slide-image">
-                              <img src="images/tanks3.png">
+                              <img src="images/projects/tanks3.png">
                             </div>
                             <div class="carousel-controls">
                               <label for="img-2" class="prev-slide">
@@ -301,7 +303,7 @@
                         </ul>
                       </div>
                     </div>
-                    <img src="images/face.png" alt="wip">
+                    <!-- <img src="images/face.png" alt="wip"> -->
                   </div>
                   <div class ="info">
                     <div class="project">
@@ -346,7 +348,7 @@
 
           <div class="card stationary">
             <div class="image">
-              <img src="images/tanks.png" alt="wip">
+              <img src="images/projects/stationarycover.png" alt="wip">
             </div>
 
             <div class="title">
@@ -380,7 +382,60 @@
                 <div class="holder"><hr></div>
                 <div class="modalflex">
                   <div class="showcase">
-                    <img src="images/face.png" alt="wip">
+                    <div id="sta-carousel">
+                      <div class="carousel">
+                        <ul class="slides">
+                          <input type="radio" name="sta-radio-buttons" id="sta-img-1" checked />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/stationary1.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="sta-img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="sta-img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="sta-radio-buttons" id="sta-img-2" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/stationary2.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="sta-img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="sta-img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="sta-radio-buttons" id="sta-img-3" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/stationary3.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="sta-img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="sta-img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <div class="carousel-dots">
+                            <label for="sta-img-1" class="carousel-dot" id="sta-img-dot-1"></label>
+                            <label for="sta-img-2" class="carousel-dot" id="sta-img-dot-2"></label>
+                            <label for="sta-img-3" class="carousel-dot" id="sta-img-dot-3"></label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <img src="images/face.png" alt="wip"> -->
                   </div>
                   <div class ="info">
                     <div class="project">
@@ -425,10 +480,131 @@
         </div>
         <div class="botrow thincolumn">
 
+          <div class="card me">
+            <div class="image">
+              <img src="images/projects/mecover.png" alt="wip">
+            </div>
+
+            <div class="title">
+              <h2>Portfolio</h2>
+            </div>
+            <div class="content">
+              <div class="desc">
+                <span>Portfolio Website</span>
+              </div>
+              <div class="svg-wrapper">
+                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="45" width="150" />
+                  <div id="text">
+                    <button class="button open-button">See More</button>
+                  </div>
+                </svg>
+              </div>
+
+              <dialog class="modal" id="modal">
+                <div class="project">
+                  <h2>Portfolio Website</h2>
+                </div>
+                <div class="holder"><hr></div>
+                <div class="modalflex">
+                  <div class="showcase">
+                    <div id="me-carousel">
+                      <div class="carousel">
+                        <ul class="slides">
+                          <input type="radio" name="me-radio-buttons" id="me-img-1" checked />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/me1.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="me-img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="me-img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="me-radio-buttons" id="me-img-2" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/me2.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="me-img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="me-img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="me-radio-buttons" id="me-img-3" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/me3.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="me-img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="me-img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <div class="carousel-dots">
+                            <label for="me-img-1" class="carousel-dot" id="me-img-dot-1"></label>
+                            <label for="me-img-2" class="carousel-dot" id="me-img-dot-2"></label>
+                            <label for="me-img-3" class="carousel-dot" id="me-img-dot-3"></label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class ="info">
+                    <div class="project">
+                      <span class="head"><h3>Category: </h3></span>
+                      <span class="list">Personal Project</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Date: </h3></span>
+                      <span class="list">2023</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Languages: </h3></span>
+                      <span class="list">JavaScript <br>HTML/CSS</span>
+                    </div>
+                    <div class="project">
+                      <span class="head"><h3>Technologies: </h3></span>
+                      <span class="list">Visual Studio Code<br>Aseprite<br>Clip Studio Paint</span>
+                    </div>
+                    <hr>
+                    <div class="about">
+                      <h3>About: <br></h3>
+                      The website you'r currently visiting! This website was created as both a personal project and as a portfolio of sorts. Here you can find some of the past projects I've worked on along with a bit of info about me.
+                    </div>
+                    <div class="closebutton">
+                      <div class="svg-wrapper close">
+                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="45" width="130" />
+                          <div id="text">
+                            <button class="button close-button">Close</button>
+                          </div>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </dialog>
+            </div>
+            
+          </div>
 
           <div class="card talismans">
             <div class="image">
-              <img src="images/tanks.png" alt="wip">
+              <img src="images/projects/talismanscover.png" alt="wip">
             </div>
 
             <div class="title">
@@ -462,7 +638,60 @@
                 <div class="holder"><hr></div>
                 <div class="modalflex">
                   <div class="showcase">
-                    <img src="images/face.png" alt="wip">
+                    <div id="tal-carousel">
+                      <div class="carousel">
+                        <ul class="slides">
+                          <input type="radio" name="tal-radio-buttons" id="tal-img-1" checked />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/talismans1.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="tal-img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="tal-img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="tal-radio-buttons" id="tal-img-2" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/talismans2.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="tal-img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="tal-img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="tal-radio-buttons" id="tal-img-3" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/talismans3.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="tal-img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="tal-img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <div class="carousel-dots">
+                            <label for="tal-img-1" class="carousel-dot" id="tal-img-dot-1"></label>
+                            <label for="tal-img-2" class="carousel-dot" id="tal-img-dot-2"></label>
+                            <label for="tal-img-3" class="carousel-dot" id="tal-img-dot-3"></label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <img src="images/face.png" alt="wip"> -->
                   </div>
                   <div class ="info">
                     <div class="project">
@@ -506,9 +735,8 @@
 
           <div class="card defeat">
             <div class="image">
-              <img src="images/tanks.png" alt="wip">
+              <img src="images/projects/eatcover.png" alt="wip">
             </div>
-
             <div class="title">
               <h2>Eat n' Defeat</h2>
             </div>
@@ -540,7 +768,59 @@
                 <div class="holder"><hr></div>
                 <div class="modalflex">
                   <div class="showcase">
-                    <img src="images/face.png" alt="wip">
+                    <div id="eat-carousel">
+                      <div class="carousel">
+                        <ul class="slides">
+                          <input type="radio" name="eat-radio-buttons" id="eat-img-1" checked />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/eat1.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="eat-img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="eat-img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="eat-radio-buttons" id="eat-img-2" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/eat2.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="eat-img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="eat-img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <input type="radio" name="eat-radio-buttons" id="eat-img-3" />
+                          <li class="slide-container">
+                            <div class="slide-image">
+                              <img src="images/projects/eat3.png">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="eat-img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                              </label>
+                              <label for="eat-img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                              </label>
+                            </div>
+                          </li>
+                          <div class="carousel-dots">
+                            <label for="eat-img-1" class="carousel-dot" id="eat-img-dot-1"></label>
+                            <label for="eat-img-2" class="carousel-dot" id="eat-img-dot-2"></label>
+                            <label for="eat-img-3" class="carousel-dot" id="eat-img-dot-3"></label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class ="info">
                     <div class="project">
@@ -563,76 +843,6 @@
                     <div class="about">
                       <h3>About: <br></h3>
                       Shoot your way through endless waves of enemies in this fast paced space shooter. If the enemies prove too challenging or if you think you've got the hang of things, make your own levels and create your own challenge!
-                    </div>
-                    <div class="closebutton">
-                      <div class="svg-wrapper close">
-                        <svg height="45" width="130" xmlns="http://www.w3.org/2000/svg">
-                          <rect id="shape" height="45" width="130" />
-                          <div id="text">
-                            <button class="button close-button">Close</button>
-                          </div>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </dialog>
-            </div>
-            
-          </div>
-
-          <div class="card wip">
-            <div class="image">
-              <img src="images/tanks.png" alt="wip">
-            </div>
-
-            <div class="title">
-              <h2>WIP...</h2>
-            </div>
-            <div class="content">
-              <div class="desc">
-                <span>Movement Shmup Game</span>
-              </div>
-              <div class="svg-wrapper">
-                <svg height="45" width="150" xmlns="http://www.w3.org/2000/svg">
-                  <rect id="shape" height="45" width="150" />
-                  <div id="text">
-                    <button class="button open-button">See More</button>
-                  </div>
-                </svg>
-              </div>
-
-              <dialog class="modal" id="modal">
-                <div class="project">
-                  <h2>WIP...</h2>
-                </div>
-                <div class="holder"><hr></div>
-                <div class="modalflex">
-                  <div class="showcase">
-                    <img src="images/face.png" alt="wip">
-                  </div>
-                  <div class ="info">
-                    <div class="project">
-                      <span class="head"><h3>Category: </h3></span>
-                      <span class="list">Personal Project</span>
-                    </div>
-                    <div class="project">
-                      <span class="head"><h3>Date: </h3></span>
-                      <span class="list">2022-Present</span>
-                    </div>
-                    <div class="project">
-                      <span class="head"><h3>Languages: </h3></span>
-                      <span class="list">C#</span>
-                    </div>
-                    <div class="project">
-                      <span class="head"><h3>Technologies: </h3></span>
-                      <span class="list">Unity<br>Visual Studio<br>Aseprite</span>
-                    </div>
-                    <hr>
-                    <div class="about">
-                      <h3>About: <br></h3>
-                      Stay tuned...
                     </div>
                     <div class="closebutton">
                       <div class="svg-wrapper close">

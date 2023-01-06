@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
     
     /* border: 1px solid darkgoldenrod; */
 }.projects img {
@@ -29,8 +30,10 @@
 }.projects .header{
     font-size: 7rem;
     margin: 30px 0;
+    margin-top: 0px;
 }.projects .desc{
     font-size: 1.5rem;
+    margin-top: 20px;
 }.projects .title{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
@@ -80,7 +83,7 @@
 
 
     border: 5px solid transparent;
-    transition: 0.4s;
+    transition: 0.2s;
 }.projects .card:hover{
     animation: none;
     box-shadow: 0px 0px 25px 2px white;
