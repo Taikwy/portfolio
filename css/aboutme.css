@@ -6,6 +6,8 @@
     color: white;
     
     padding-top: 20px;
+
+    margin-bottom: 100px;
     /* border: 1px solid red; */
 }
 
@@ -20,11 +22,6 @@
     align-items: center;
     
     /* border: 1px solid darkgoldenrod; */
-}
-
-.aboutme img {
-    /* border: 1px solid black;
-    width: 55%; */
 }
 
 .aboutme .text{
@@ -54,10 +51,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
     
 
-    background-color: rgba(0, 0, 255 , .2);
+    /* background-color: rgba(0, 0, 255 , .2); */
     /* opacity: .2; */
 }
   
@@ -85,17 +82,40 @@
     /* border: 2px solid white; */
 }
   
-.hobbies .imgcontainer.t{
+.hobbies .imgcontainer.a{
     position: absolute; 
-}
-.hobbies .imgcontainer.m{
+    top: -180px;
+}.hobbies .imgcontainer.b{
     position: absolute; 
-}
-.hobbies .imgcontainer.b{
+    top: -180px;
+}.hobbies .imgcontainer.c{
     position: absolute; 
+    top: -90px;
+}.hobbies .imgcontainer.d{
+    position: absolute; 
+    top: -90px;
+}.hobbies .imgcontainer.e{
+    position: absolute; 
+    top: -120px;
+}.hobbies .imgcontainer.f{
+    position: absolute; 
+    top: -120px;
+}.hobbies .imgcontainer.g{
+    position: absolute; 
+    top: -90px;
+}.hobbies .imgcontainer.h{
+    position: absolute; 
+    top: -70px;
+}.hobbies .imgcontainer.i{
+    position: absolute; 
+    top: -90px;
+}.hobbies .imgcontainer.j{
+    position: absolute; 
+    top: -30px;
 }
 
 
-.gaming .imgcontainer.g{
+.gaming .imgcontainer.w{
     position: absolute; 
+    top: 120px;
 }

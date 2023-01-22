@@ -1,8 +1,6 @@
  
 .setup.imagecontainer{
-    /* position: absolute; */
     position: relative;
-    /* height: 100%; */
     width: 55%;
     height: 750px;
     display: flex;
