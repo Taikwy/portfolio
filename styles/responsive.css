@@ -1,0 +1,106 @@
+@media screen and (max-width: 1800px) {
+    .projects .about.flex{
+        margin: auto;
+        margin-top: 180px;
+        margin-bottom: 150px;
+    
+        flex-direction: column;
+    }.projects .text{
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+        border: 1px solid blue;
+    }
+    .setup.imagecontainer{
+        width: 80%;
+        height: 750px;
+    }.setup .imgcontainer img{
+        width: 100%;
+    }
+    
+    .xpflex{
+        flex-direction: column;
+    }.xpflex .company{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }.xpflex .darkwindsite{
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }.xpflex hr{
+        border: 0px solid white;
+    }
+
+    .xpflex .right{
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .setup.imagecontainer{
+        height: 500px;
+    }
+    .projects .items.flexrow{
+    }.projects .toprow{
+        flex-direction: column;
+    }
+    .projects .toprow .card{
+        width: 800px;
+        max-width: 85%;
+        min-width: 380px;
+        height: 400px;
+        margin: 12px auto;
+    }
+    .projects .botrow{
+        flex-direction: column;
+    }.projects .botrow .card{
+        width: 800px;
+        max-width: 85%;
+        min-width: 380px;
+        height: 400px;
+        margin: 12px auto;
+    }
+
+    .aboutme .desc.flex{
+        flex-direction: column;
+    }
+    .aboutme .text{
+        width: 85%;
+        min-width: 380px;
+    }     
+    .hobbies.imagecontainer, .gaming.imagecontainer{
+        position: relative;
+        width: 80%;
+        min-width: 450px;
+    }
+
+    .xpflex .company{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .xpflex .right{
+        width: 80%;
+        min-width: 380px;
+        margin: 0px auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .setup.imagecontainer{
+        height: 300px;
+    }
+    .projects.container {
+        width: 100%;
+        /* background-color: blue; */
+    }
+    .projects .toprow .card{
+        height: 300px;
+    }.projects .botrow .card{
+        height: 300px;
+    }
+}

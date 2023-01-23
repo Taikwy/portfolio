@@ -1,13 +1,19 @@
 .projects.container {
-    background-color: #155F94;
-    background-color: black;
+    /* background-color: #155F94;
+    background-color: black; */
     color: white;
+    
+    width: 70%;
+    max-width: 1650px;
+    
+    margin: auto;
 }
 
 .projects .about.flex{
     position: relative;
-    width: 70%;
-    max-width: 70%;
+    /* width: 70%;
+    max-width: 70%; */
+    min-width: 500px;
     margin: auto;
     margin-top: 180px;
     margin-bottom: 150px;
@@ -27,6 +33,7 @@
 }.projects .text{
     text-align: left;
     width: 40%;
+    min-width: 410px;
     margin-left: 25px;
     /* border: 1px solid blue; */
 }.projects .header{
@@ -43,7 +50,6 @@
 
 
 .projects .items.flexrow{
-    width: 70%;
     margin: auto;
 
     display: flex;
@@ -84,7 +90,7 @@
     box-sizing: border-box;
 
 
-    border: 5px solid transparent;
+    /* border: 5px solid green; */
     transition: 0.2s;
 }.projects .card:hover{
     animation: none;
@@ -94,12 +100,14 @@
 
 .projects .toprow .card{
     width: 450px;
+    max-width: 800px;
     height: 450px;
     flex: 1 1  auto;
     /* border: 1px solid brown; */
 }.projects .botrow .card{
     width: 450px;
     height: 450px;
+    flex: 1 1  auto;
 }
 
 

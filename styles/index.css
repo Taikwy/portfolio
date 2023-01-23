@@ -2,51 +2,50 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    /* max-width: 1000px; */
-    /* min-width: 500px; */
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    /* width: 100%; */
+    /* margin: 0 auto; */
     margin: 0 auto;
-    background-color: black;
+    /* background-color: black; */
     
     font-family: 'Martian Mono', monospace;
-    /* font-family: 'Roboto Condensed', sans-serif; */
+    
 
-    /* font-family: 'Barlow', sans-serif; */
-    /* font-family: 'Familjen Grotesk', sans-serif; */
-    /* font-family: 'Hanken Grotesk', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
+    /* border: 4px green solid; */
+}
+
+body {
+	background: linear-gradient(-45deg, #391807, #1D0913, #0A1C20, #10344F);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	25% {
+		background-position: 100% 50%;
+	}
+	50% {
+		background-position: 100% 0%;
+	}
+    75% {
+		background-position: 50% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .header{
     font-family: 'Bebas Neue', cursive;
-    /* font-family: 'Space Grotesk', sans-serif; */
-    /* font-family: 'Rosario', sans-serif; */
 }
-
-
-
-.eyes {
-    width: 100%;
-    text-align: center;
-}
-.eye {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background: #CCC;
-}
-.eye:after { /*pupil*/
-    position: absolute;
-    bottom: 17px;
-    right: 10px;
-    width: 10px;
-    height: 10px;
-    background: #000;
-    border-radius: 50%;
-    content: " ";
-}
-
 
 
 .mouseHolder{
@@ -62,7 +61,7 @@ footer{
     text-align: center;
     position: relative;
 
-    background-color: black;
+    /* background-color: black; */
     /* border: 1px solid green; */
 }
 
