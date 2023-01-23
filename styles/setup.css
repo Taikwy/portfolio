@@ -27,8 +27,8 @@
     position: absolute;
     object-fit: contain;
     
-    width: 100%;
-    /* left: -50px; */
+    width: 125%;
+    left: -100px;
 
     opacity: 1;
 }
