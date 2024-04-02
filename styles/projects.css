@@ -1,22 +1,58 @@
 .projects.container {
     /* background-color: #155F94;
     background-color: black; */
+    position: relative;
     color: white;
+    overflow: hidden;
     
-    width: 70%;
-    max-width: 1650px;
+    width: 100%;
+    /* max-width: 1650px; */
     
     margin: auto;
+    padding-bottom: 360px;
+    /* border: 2px solid red; */
+}
+
+
+.projects .bgimage{
+    position: absolute;
+    opacity: .5;
+    z-index: -1;
+    background-repeat:repeat-y;
+    width: 200px;
+
+    margin-left: -300px;
+    margin-top: -300px;
+    
+    animation: translateImage 8s infinite linear;
+}.projects .bgimage img{
+    background-repeat: repeat-x;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 1000px; */
+    /* width: 100%; */
+}
+
+@keyframes translateImage {
+    from {
+        transform: translateX(0) translateY(0);
+      }
+      to { 
+        transform: translateX(256px) translateY(256px);
+      }
 }
 
 .projects .about.flex{
     position: relative;
+    width: 70%;
+    max-width: 1650px;
     /* width: 70%;
     max-width: 70%; */
     min-width: 500px;
     margin: auto;
-    margin-top: 180px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 120px;
 
     display: flex;
     flex-direction: row;
@@ -26,10 +62,6 @@
     overflow: visible;
     
     /* border: 1px solid darkgoldenrod; */
-}.projects img {
-    /* border: 1px solid black;
-    width: 55%;
-    margin-right: 25px; */
 }.projects .text{
     text-align: left;
     width: 40%;
@@ -37,9 +69,10 @@
     margin-left: 25px;
     /* border: 1px solid blue; */
 }.projects .header{
-    font-size: 7rem;
+    font-size: 8rem;
     margin: 30px 0;
     margin-top: 0px;
+    animation: aboutGlow 2s alternate infinite linear;
 }.projects .desc{
     font-size: 1.5rem;
     margin-top: 20px;
@@ -48,10 +81,28 @@
     font-size: 2rem;
 }
 
+@keyframes projectsGlow {
+    0% {
+        color: white;
+        filter: drop-shadow(0 0 0px #ffffff00);
+    }
+    80%{
+        
+        color: white;
+    }
+    100% {
+        color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+  }
+
+
 
 .projects .items.flexrow{
     margin: auto;
 
+    width: 70%;
+    max-width: 1650px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

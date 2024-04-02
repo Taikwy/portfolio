@@ -40,6 +40,7 @@
     
     <!-- About Me -->
     <link rel="stylesheet" href="styles/aboutme.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     
@@ -75,22 +76,23 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="#projects" class="link">
-            <span class="mask">
-              <div class="link-container">
-                <span class="link-text1 text">Projects</span>
-                <span class="link-text2 text">Projects</span>
-              </div>
-            </span>
-          </a>
-        </li>
+        
         <li>
           <a href="#experience" class="link">
             <span class="mask">
               <div class="link-container">
                 <span class="link-text1 text">Experience</span>
                 <span class="link-text2 text">Experience</span>
+              </div>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="link">
+            <span class="mask">
+              <div class="link-container">
+                <span class="link-text1 text">Projects</span>
+                <span class="link-text2 text">Projects</span>
               </div>
             </span>
           </a>
@@ -196,14 +198,136 @@
 
     </div>
     
-    
-    
+    <div class="container experience" id="experience">
+      <div class="header">Experience</div>
+      <div class="saic">
+        <div class="company">
+          <h2>SAIC</h2>
+          <hr>
+        </div>
+        <div class="xpflex">
+          
+          <!-- <hr> -->
+          <div class="left">
+            <div class ="pos">
+              <!-- <div class="holder"><hr></div> -->
+              <div class="line">
+                <span class="head"><h3>Position: </h3></span>
+                <span class="list">Game Programming Intern</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Location: </h3></span>
+                <span class="list">El Segundo, California</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Date: </h3></span>
+                <span class="list">2023</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Languages: </h3></span>
+                <span class="list">C++</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Technologies: </h3></span>
+                <span class="list">Unreal Engine<br>Visual Studio<br>Cesium<br>MATLAB</span>
+              </div>
+              
+            </div>
+          </div>
+          <hr>
+          <div class="right">
+            <div class="role">
+              <!-- <h3>Role:<br></h3> -->
+              Collaborated with a team of engineers and game developers to create an online multiplayer, turn-based wargame in Unreal Engine.<br><br>
+              Helped develop multiplayer functionality to allow separate machines to connect via LAN as clients to a single game server.<br><br>
+              Designed the game's UI and programmed it to function with multiplayer and display player actions using data generated from Ansys STK.
+              
+            </div>
+
+            
+          </div>
+          <div class="svg-wrapper sitelink">
+            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="50" width="320" />
+              <div id="text">
+                <a href="https://www.saic.com/" target="_blank" ><button class="button">Company Website</button></a>
+              </div>
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="darkwind">
+        <div class="company">
+          <h2>Darkwind Media</h2>
+          <hr>
+        </div>
+        <div class="xpflex">
+          <div class ="left">
+            <div class="role">
+              Worked on a team to develop a mobile game in Unity and wrote code for its deployment onto Android devices.<br><br>
+              Used Google Play Services to incorporate online functionality such as cloud saves, achievements, and in-app purchases.<br><br>
+              Handled data management for the game and worked with the game's save data system to work with the Google Play API.
+            </div>
+          </div>
+          <hr>
+          <div class="right">
+
+            <div class ="pos">
+              <!-- <div class="holder"><hr></div> -->
+              <div class="line">
+                <span class="head"><h3>Position: </h3></span>
+                <span class="list">Junior Game Developer</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Location: </h3></span>
+                <span class="list">Rochester, New York</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Date: </h3></span>
+                <span class="list">2022</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Languages: </h3></span>
+                <span class="list">C#</span>
+              </div>
+              <div class="line">
+                <span class="head"><h3>Technologies: </h3></span>
+                <span class="list">Unity <br>Visual Studio<br>Google Play API<br>Android Studio</span>
+              </div>
+              
+            </div>
+            
+
+            
+          </div>
+          <div class="svg-wrapper sitelink">
+            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="50" width="320" />
+              <div id="text">
+                <a href="https://www.darkwindmedia.com/" target="_blank" ><button class="button">Company Website</button></a>
+              </div>
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+      
+      </div>     
+    </div>
+    <hr>
+
     <div class="container projects" id="projects">
+      <div class="bgimage">
+        <img src="images/big-illusion.png" alt="">
+      </div>
+
       <div class="about flex">
         <div class="text">
           <div class="header">Projects</div>
           <div class="desc">
-            Here you can find a some of the featured projects I've worked on in the past. I spend most of my time programming and developing my own games, though I occasionally work with web development as well. If time allows it, I also enjoy creating my own game assets.
+            Here you can find a collection of featured projects that I've worked on in the past. I spend most of my time programming and developing games, as well as occasionally working with web development. When time allows it, I also enjoy creating my own game assets, such as pixel art, animations, or even music.
           </div>
         </div>
         <div class="imagecontainer setup">
@@ -213,6 +337,7 @@
         </div>
         <!-- <img src="images/SSHornet.png" alt="wip"> -->
       </div>
+
 
       <div class="items flexcolumn flexrow">
 
@@ -870,77 +995,17 @@
 
       </div>
     </div>
-
-    <div class="container experience" id="experience">
-      <div class="header">Experience</div>
-
-      <div class="darkwind">
-        <div class="xpflex">
-         
-          <div class="company">
-            <h2>Darkwind Media</h2>
-            <div class="svg-wrapper darkwindsite">
-              <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect id="shape" height="50" width="320" />
-                <div id="text">
-                  <a href="https://www.darkwindmedia.com/" target="_blank" ><button class="button">Company Website</button></a>
-                </div>
-              </svg>
-            </div>
-          </div>
-          
-          <!-- <div class="image">
-            <img src="images/darkwind-white.webp" alt="">
-          </div> -->
-          <hr>
-          <div class="right">
-
-            <div class ="pos">
-              <!-- <div class="holder"><hr></div> -->
-              <div class="line">
-                <span class="head"><h3>Position: </h3></span>
-                <span class="list">Junior Game Developer</span>
-              </div>
-              <div class="line">
-                <span class="head"><h3>Location: </h3></span>
-                <span class="list">Rochester, New York</span>
-              </div>
-              <div class="line">
-                <span class="head"><h3>Date: </h3></span>
-                <span class="list">2022</span>
-              </div>
-              <div class="line">
-                <span class="head"><h3>Languages: </h3></span>
-                <span class="list">C#</span>
-              </div>
-              <div class="line">
-                <span class="head"><h3>Technologies: </h3></span>
-                <span class="list">Visual Studio<br>Google Play API<br>Android Studio</span>
-              </div>
-              
-            </div>
-            <hr>
-            <div class="role">
-              <h3>Role:<br></h3>
-              Collaborated with a team to develop a movile game in Unity and wrote code for its deployment onto Android devices.<br><br>
-              Used Google Play Services to incorporate online functionality such as cloud saves, achievements, and in-app purchases.<br><br>
-              Handled data management for the game and worked with the game's save data system to work with the Google Play API.
-            </div>
-
-            
-          </div>
-          
-        </div>
-      </div>
-      
-      </div>     
-    </div>
+    <hr>
     
+
     <div class="container aboutme" id="aboutme">
+      
+      
+
       <div class="header">About Me</div>
       <div class="desc flex">
         <div class="hobbies text">
-          Whether it's digital art with my drawing tablet or pushing some pixels to make my own game assets, drawing is one of my favorite hobbies (even if I don't always have time for it). I also love cooking and testing out my own recipes to experience cuisines my local restaurants might not feature. 
+          Whether it's drawing on a digitabl tablet creating pixel art, drawing is one of my favorite hobbies. I also love cooking and creating my own recipes to experience cuisines my local restaurants might not feature.
         </div>
         
         <div class="imagecontainer hobbies">
@@ -959,15 +1024,27 @@
           <div class="imgcontainer b"><img src="images/parallax/hobbies/ds4.png"          class="object" zLayer="4.2" xSpeed="1" ySpeed="1" alt=""></div>
           <div class="imgcontainer a"><img src="images/parallax/hobbies/switch.png"       class="object" zLayer="4.5" xSpeed="1" ySpeed="1" alt=""></div>
         </div>
-        <div class="imagecontainer gaming">
+        <!-- <div class="imagecontainer gaming">
           <div class="imgcontainer w"><img src="images/parallax/weapons.png" class="object" zLayer="-2" xSpeed="1" ySpeed="1" alt=""></div>
+        </div> -->
+        <div class="imagecontainer gaming">
+          <div class="imgcontainer w"><img src="images/lost-kin-white.png" class="object" zLayer="-2" xSpeed="1" ySpeed="1" alt=""></div>
         </div>
         <div class="gaming text">
-          When I have free time to game I try to play as wide of a variety as possible. I spend a lot of time trying out new indie games to see whatever fresh mechanics or systems they might implement. I love playing difficult games although I'm enjoy slower paced RPGS as well. Sometimes I crave something more competitive, so I'll beat up some of my friends in fighting games.
+          Even though most of my time is spent working on my projects, I still enjoy playing games whenever I can. I have a deep fascination for game design and believe that experiencing a wide variety of games and genres is the best way to understand games more. I love playing fresh new indie releases to old school classics, with some of my favorite games in recent years being Disco Elysium, Lies of P, and Street Fighter 6.
         </div>        
       </div>
     </div>
-
+    <hr>
+    <div class="container contact">  
+      <div class="bgimage">
+        <img src="images/big-illusion.png" alt="">
+      </div>
+      <div class="header">CONTACT ME</div>
+      <div class="desc">You've reached the end of my website, but I'd love to stay in contact with you! You can reach me through email at <span id="email">twangdev14@gmail.com</span></div>
+    </div>
+    <hr>
+    
     <footer class="footer">
       
       <!-- <div class="image"><img src="images/footer/infection.png" alt=""></div> -->
@@ -980,7 +1057,7 @@
         <div class="imgcontainer f3"><img src="images/footer/fog3.png" class="object" zLayer=".25" xSpeed="1" ySpeed="1" alt=""></div>
       </div>
       <div class="flex">
-        <h1>Tyler Wang 2023</h1>
+        <h1>Tyler Wang 2024</h1>
         <div class="links">
           <a href="https://github.com/Taikwy" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 16 16">

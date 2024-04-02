@@ -15,11 +15,15 @@
     border-bottom: solid 5px white;
 }
 
+.landing span{
+    animation: xpGlow2 1s alternate infinite linear;
+}
+
 .landing .image{
     position: absolute;
     opacity: .5;
     
-    animation: translateImage 10s infinite linear;
+    animation: translateImage 8s infinite linear;
 }.landing img{
     display: block;
     margin-left: auto;
@@ -33,10 +37,21 @@
         transform: translateX(0) translateY(0);
       }
       to { 
-        transform: translateX(128px) translateY(128px);
+        transform: translateX(256px) translateY(256px);
       }
 }
-
+@keyframes landingGlow {
+    0% {
+        color: #FF3200;
+        border-color: #FF3200;
+        filter: drop-shadow(0 0 0px #FF6C00);
+    }
+    100% {
+        color: #FF8000;
+        border-color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+}
 
 .landing .flex{
     height: 100vh;

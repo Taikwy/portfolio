@@ -1,0 +1,98 @@
+
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+/* #contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+} */
+
+.container.contact{
+    position: relative;
+    color: white;
+    
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 120px;
+    padding-bottom: 160px;
+
+    overflow: hidden;
+    
+    width: 100%;
+    
+    margin: auto;
+}
+
+@keyframes aboutGlow {
+    0% {
+        color: white;
+        filter: drop-shadow(0 0 0px #ffffff00);
+    }
+    80%{
+        
+        color: white;
+    }
+    100% {
+        color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+  }
+.contact .header{
+    width: 70%;
+    text-align: center;
+    font-size: 6rem;
+    /* margin: 0px 0; */
+    margin: auto;
+    animation: aboutGlow 2s alternate infinite linear;
+}.contact .desc{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: white;
+}
+.contact .desc #email{
+    
+    animation: xpGlow2 2s alternate infinite linear;
+}
+@keyframes xpGlow2 {
+    0% {
+        color: #FF3200;
+        border-color: #FF3200;
+        filter: drop-shadow(0 0 0px #FF6C00);
+    }
+    100% {
+        color: #FF8000;
+        border-color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+}
+
+.contact .bgimage{
+    position: absolute;
+    opacity: .5;
+    z-index: -1;
+    background-repeat:repeat-y;
+    width: 200px;
+
+    margin-left: -400px;
+    margin-top: -400px;
+    
+    animation: translateImage 8s infinite linear;
+}.contact .bgimage img{
+    background-repeat: repeat-x;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 1000px; */
+    /* width: 100%; */
+}
+
+@keyframes translateImage {
+    from {
+        transform: translateX(0) translateY(0);
+      }
+      to { 
+        transform: translateX(256px) translateY(256px);
+      }
+}

@@ -5,20 +5,28 @@
     /* background-color: black; */
     color: white;
     
-    padding-top: 20px;
+    padding-top: 120px;
+    padding-bottom: 250px;
 
+    overflow: hidden;
     
-    width: 70%;
-    max-width: 1650px;
+    width: 100%;
+    /* max-width: 1650px; */
     
     margin: auto;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     /* border: 1px solid red; */
-}
 
+    /* background-image: url(../images/illusion.png);
+    background-repeat: repeat; */
+}
 .aboutme .desc.flex{
     /* width: 70%;
     margin: auto; */
+
+    margin: auto;
+    width: 70%;
+    max-width: 1650px;
 
     display: flex;
     flex-direction: row;
@@ -28,20 +36,36 @@
     
     /* border: 1px solid darkgoldenrod; */
 }
-
 .aboutme .text{
     text-align: left;
     width: 40%;
     /* border: 1px solid blue; */
 }
 
+@keyframes aboutGlow {
+    0% {
+        color: white;
+        filter: drop-shadow(0 0 0px #ffffff00);
+    }
+    80%{
+        
+        color: white;
+    }
+    100% {
+        color: #FF8000;
+        filter: drop-shadow(0 0 15px #FF6C00);
+    }
+  }
 .aboutme .header{
-    font-size: 7rem;
+    font-size: 8rem;
     margin: 30px 0;
-}
-.aboutme .desc{
+    animation: aboutGlow 2s alternate infinite linear;
+}.aboutme .desc{
     font-size: 1.5rem;
 }
+
+
+
 
 
 
