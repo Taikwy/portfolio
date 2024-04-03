@@ -191,14 +191,3 @@ footer a{
     filter: drop-shadow(0 0 20px #7700FF) drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 5px #7700FF);
     
 }
-@keyframes footerGlow {
-    0% {
-        /* color: #009BFF; */
-        color: #5800C8;
-        filter: drop-shadow(0 0 0px);
-    }
-    100% {
-        color: #AF69FF;
-        filter: drop-shadow(0 0 12px #7700FF) drop-shadow(0 0 10px #7700FF);
-    }
-}
